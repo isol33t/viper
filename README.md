@@ -25,7 +25,7 @@ VIA spec based on [wt60_d](https://github.com/the-via/keyboards/blob/9da730d66a0
 python -m kbplacer.kle_serial -in keyboard-layout-via.json -inform KLE_VIA -out keyboard-layout-collapsed.json -outform KLE_RAW -collapse
 ```
 
-### KLE Raw
+### KLE Raw, Collapsed(?)
 
 ```
 [{x:2.5,c:"#777777"},"0,0",{c:"#cccccc"},"0,3","0,2","0,1","0,4","0,5","0,6","0,7","0,8","0,9","0,12","0,11","0,10",{c:"#aaaaaa",w:2},"0,13\n\n\n0,0",{x:0.5,c:"#cccccc"},"0,13\n\n\n0,1","2,13\n\n\n0,1"],
@@ -38,3 +38,12 @@ python -m kbplacer.kle_serial -in keyboard-layout-via.json -inform KLE_VIA -out 
 - Forked [duck_viper](https://adamws.github.io/keyboard-pcbs/#duck-eagle_viper-v2-eagle_viper)
 - - Removed ANSI bottom row
 - - Assigned VIA option 4,0 to HHKB bottom row for optional HHKB split later
+
+## Build with Docker
+
+`sed -i.bak 's/absolem/viper/g' Dockerfile run.sh`
+
+Changed Dockerfile
+
+./run
+

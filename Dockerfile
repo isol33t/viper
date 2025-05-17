@@ -40,12 +40,19 @@ RUN git clone https://github.com/adamws/kicad-kbplacer.git \
   && python3 -m pip install .
 
 RUN mkdir -p $WORK_PATH
-COPY viper-kle.json $WORK_PATH
+COPY keyboard-layout-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
 
 WORKDIR $WORK_PATH
 
 COPY template.kicad_pro $WORK_PATH/$PROJECT_NAME.kicad_pro
 RUN sed -i 's/template\.kicad_pro/$PROJECT_NAME\.kicad_pro/g' $PROJECT_NAME.kicad_pro
+
+# RUN python3 -m kbplacer.kle_serial \
+#   -in keyboard-layout-collapsed.json -inform KLE_RAW \
+#   -outform KLE_RAW -out $PROJECT_NAME-kle.json
+
+# fix labels (to be fixed in kbplacer)
+# RUN sed -i 's/[RC]//g' $PROJECT_NAME-kle.json
 
 RUN cd /kicad-kbplacer \
   && hatch run tools:layout2schematic -in $WORK_PATH/$PROJECT_NAME-kle.json \
