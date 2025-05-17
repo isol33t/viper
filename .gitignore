@@ -38,3 +38,5 @@ Gerbers/*
 plots/*
 
 tools/*.py
+
+skidl*
