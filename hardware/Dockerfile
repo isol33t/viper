@@ -1,7 +1,7 @@
 ARG WORK_PATH=/keyboard
 ARG PROJECT_NAME=viper
 
-FROM admwscki/kicad-kbplacer-primary:8.0.6-jammy
+FROM admwscki/kicad-kbplacer-primary:8.0.9-jammy
 
 # this revision has been used when [1] has been written
 # [1] https://adamws.github.io/keyboard-pcb-design-with-ergogen-and-kbplacer/
@@ -14,7 +14,7 @@ ARG PROJECT_NAME
 ARG SWITCH_LIBRARY=com_github_perigoso_keyswitch-kicad-library
 
 RUN apt-get update \
-  && apt-get install -y xdotool x11-xserver-utils x11-apps zip
+  && apt-get install -y openscad xdotool x11-xserver-utils x11-apps zip
 
 ENV DISPLAY=:99
 ENV XAUTHORITY=/root/.Xauthority
@@ -40,17 +40,24 @@ RUN git clone https://github.com/adamws/kicad-kbplacer.git \
   && python3 -m pip install .
 
 RUN mkdir -p $WORK_PATH
-COPY viper-kle.json $WORK_PATH
+COPY keyboard-layout-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
 
 WORKDIR $WORK_PATH
 
 COPY template.kicad_pro $WORK_PATH/$PROJECT_NAME.kicad_pro
 RUN sed -i 's/template\.kicad_pro/$PROJECT_NAME\.kicad_pro/g' $PROJECT_NAME.kicad_pro
 
+# RUN python3 -m kbplacer.kle_serial \
+#   -in keyboard-layout-collapsed.json -inform KLE_RAW \
+#   -outform KLE_RAW -out $PROJECT_NAME-kle.json
+
+# fix labels (to be fixed in kbplacer)
+# RUN sed -i 's/[RC]//g' $PROJECT_NAME-kle.json
+
 RUN cd /kicad-kbplacer \
   && hatch run tools:layout2schematic -in $WORK_PATH/$PROJECT_NAME-kle.json \
   -out $WORK_PATH/$PROJECT_NAME.kicad_sch -f \
-  -swf "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u" \
+  -swf "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_1.00u" \
   -df "Diode_SMD:D_SOD-123F"
 
 # this is required, otherwise netlist will contain many 'unconnected' pads
@@ -61,7 +68,7 @@ RUN kicad-cli sch export netlist --output $PROJECT_NAME.net $PROJECT_NAME.kicad_
 RUN python3 -m pip install kinet2pcb==1.1.2
 RUN kinet2pcb -i $PROJECT_NAME.net \
   --libraries /usr/share/kicad/footprints \
-              $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Switch_Keyboard_Cherry_MX.pretty \
+              $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Switch_Keyboard_Hybrid.pretty \
   --output $PROJECT_NAME.kicad_pcb
 
 RUN python3 -m kbplacer --board $PROJECT_NAME.kicad_pcb \
@@ -80,6 +87,10 @@ RUN zip -r $PROJECT_NAME.zip \
   $PROJECT_NAME.kicad_pcb \
   $PROJECT_NAME.net \
   $PROJECT_NAME.svg
+
+# sanity check for plate generation tool
+# COPY generate-plate.sh $WORK_PATH
+# RUN xvfb-run -a ./generate-plate.sh $KBPLACER_REVISION
 
 FROM scratch
 ARG WORK_PATH

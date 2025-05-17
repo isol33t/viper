@@ -36,3 +36,7 @@ fp-info-cache
 *.zip
 Gerbers/*
 plots/*
+
+skidl*
+*.log
+*.pkl
