@@ -36,3 +36,5 @@ fp-info-cache
 *.zip
 Gerbers/*
 plots/*
+
+tools/*.py
