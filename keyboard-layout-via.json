@@ -12,6 +12,7 @@
       "ISO Enter",
       "Split Left Shift",
       "Split Right Shift",
+      "Stepped Caps Lock",
       [
         "Bottom Row",
         "HHKB"
@@ -99,11 +100,15 @@
       ],
       [
         {
-          "x": 2.5,
           "c": "#aaaaaa",
+          "w": 1.25
+        },
+        "2,0\n\n\n5,1",
+        {
+          "x": 1.25,
           "w": 1.75
         },
-        "2,0",
+        "2,0\n\n\n5,0",
         {
           "c": "#cccccc"
         },
