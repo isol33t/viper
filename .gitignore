@@ -40,3 +40,4 @@ plots/*
 tools/*.py
 
 skidl*
+*.log
