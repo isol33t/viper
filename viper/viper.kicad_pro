@@ -486,7 +486,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "../keyboard.net",
+      "netlist": "../testuc/new.net",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
