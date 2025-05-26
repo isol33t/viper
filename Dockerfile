@@ -57,7 +57,7 @@ RUN sed -i 's/template\.kicad_pro/$PROJECT_NAME\.kicad_pro/g' $PROJECT_NAME.kica
 RUN cd /kicad-kbplacer \
   && hatch run tools:layout2schematic -in $WORK_PATH/$PROJECT_NAME-kle.json \
   -out $WORK_PATH/$PROJECT_NAME.kicad_sch -f \
-  -swf "Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u" \
+  -swf "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_1.00u" \
   -df "Diode_SMD:D_SOD-123F"
 
 # this is required, otherwise netlist will contain many 'unconnected' pads
@@ -68,12 +68,12 @@ RUN kicad-cli sch export netlist --output $PROJECT_NAME.net $PROJECT_NAME.kicad_
 RUN python3 -m pip install kinet2pcb==1.1.2
 RUN kinet2pcb -i $PROJECT_NAME.net \
   --libraries /usr/share/kicad/footprints \
-              $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Switch_Keyboard_Cherry_MX.pretty \
+              $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Switch_Keyboard_Hybrid.pretty \
   --output $PROJECT_NAME.kicad_pcb
 
 RUN python3 -m kbplacer --board $PROJECT_NAME.kicad_pcb \
   --layout $PROJECT_NAME-kle.json \
-  --diode "D{} CUSTOM 5.08 4 90 BACK" \
+  --diode "D{} DEFAULT" \
   --route-switches-with-diodes \
   --route-rows-and-columns
 
