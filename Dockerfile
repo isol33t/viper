@@ -73,7 +73,7 @@ RUN kinet2pcb -i $PROJECT_NAME.net \
 
 RUN python3 -m kbplacer --board $PROJECT_NAME.kicad_pcb \
   --layout $PROJECT_NAME-kle.json \
-  --diode "D{} DEFAULT" \
+  --diode "D{} CUSTOM 5.08 4 90 BACK" \
   --route-switches-with-diodes \
   --route-rows-and-columns
 
