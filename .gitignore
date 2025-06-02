@@ -41,3 +41,4 @@ tools/*.py
 
 skidl*
 *.log
+*.pkl
