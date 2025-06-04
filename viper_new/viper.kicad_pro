@@ -486,7 +486,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "viper.net",
+      "netlist": "viper-kle2netlist.net",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
