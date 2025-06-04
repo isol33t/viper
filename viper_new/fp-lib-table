@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "acheron_MountingHoles")(type "KiCad")(uri "/Users/wim/Documents/keyboards/kicad/AlexandriaLibrary/footprints/acheron_MountingHoles.pretty")(options "")(descr ""))
+  (lib (name "Switch_Misc")(type "KiCad")(uri "/Users/wim/Documents/keyboards/kicad/MX_V2/Switch_Misc.pretty")(options "")(descr ""))
+  (lib (name "locallib")(type "KiCad")(uri "/Users/wim/Documents/keyboards/kicad/locallib.pretty")(options "")(descr ""))
+)
