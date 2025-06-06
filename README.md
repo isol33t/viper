@@ -2,9 +2,7 @@
 
 ⚠️ **Work in Progress** - This project is currently under development
 
-<p align="left">
-  <img src="docs/images/render.png" alt="Duck Viper v1 Render WIP" width="75%">
-</p>
+<img src="docs/images/render.png" alt="Duck Viper v1 Render WIP" width="75%">
 
 <img src="docs/images/split-expanded.png" width="75%">
 
@@ -29,6 +27,11 @@ An open-source PCB design for the Duck Viper v1 keyboard with hardware upgrades.
 - **Transparency**: Design decisions and trade-offs documented for others to learn from
 
 ## Current Status
+
+<p align="left">
+  <img src="docs/images/schematic.svg" alt="Duck Viper v1 schematic WIP" width="75%">
+</p>
+
 
 ### Design Questions (Help Needed!)
 
