@@ -40,7 +40,7 @@ RUN git clone https://github.com/adamws/kicad-kbplacer.git \
   && python3 -m pip install .
 
 RUN mkdir -p $WORK_PATH
-COPY keyboard-layout-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
+COPY kle/keyboard-layout-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
 
 WORKDIR $WORK_PATH
 

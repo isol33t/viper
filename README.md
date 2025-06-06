@@ -44,10 +44,6 @@ QFN IC placement mock-up:
 
 *If going QFN route, schematic verification help would be greatly appreciated!*
 
-**2. Component Package: 0805 vs SOD-123**
-- Already have 0805 components sourced from previous project
-- Seeking community input on advantages of SOD-123 over 0805 for this application
-
 ## Acknowledgments
 
 This project builds upon the incredible work of the open-source keyboard community. Specific libraries, guides, and resources used will be documented as the project progresses.
