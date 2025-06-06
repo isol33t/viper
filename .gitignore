@@ -37,8 +37,6 @@ fp-info-cache
 Gerbers/*
 plots/*
 
-tools/*.py
-
 skidl*
 *.log
 *.pkl
