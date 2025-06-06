@@ -33,11 +33,11 @@ RUN cd $KICAD_3RDPARTY_PATH \
   && mv footprints ../footprints/$SWITCH_LIBRARY \
   && cd .. && rm -rf tmp
 
-RUN python3 -m pip install hatch PyYAML==6.0.1
+RUN python3 -m pip install hatch
 RUN git clone https://github.com/adamws/kicad-kbplacer.git \
   && cd kicad-kbplacer \
-  && git checkout $KBPLACER_REVISION \
-  && python3 -m pip install .
+  && git checkout $KBPLACER_REVISION
+  # && python3 -m pip install .
 
 RUN mkdir -p $WORK_PATH
 COPY keyboard-layout-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
@@ -61,14 +61,23 @@ RUN cd /kicad-kbplacer \
   -df "Diode_SMD:D_SOD-123F"
 
 # this is required, otherwise netlist will contain many 'unconnected' pads
-COPY eeschema-open-and-save.sh $WORK_PATH
-RUN xvfb-run ./eeschema-open-and-save.sh $PROJECT_NAME.kicad_sch
+# is this required with kle2netlist?
+# COPY eeschema-open-and-save.sh $WORK_PATH
+# RUN xvfb-run ./eeschema-open-and-save.sh $PROJECT_NAME.kicad_sch
 
-RUN kicad-cli sch export netlist --output $PROJECT_NAME.net $PROJECT_NAME.kicad_sch
-RUN python3 -m pip install kinet2pcb==1.1.2
+# RUN kicad-cli sch export netlist --output $PROJECT_NAME.net $PROJECT_NAME.kicad_sch
+RUN python3 -m pip install git+https://github.com/adamws/kle2netlist.git@develop
+RUN kle2netlist --layout $WORK_PATH/$PROJECT_NAME-kle.json --output $PROJECT_NAME.net \
+  --lib-path /usr/share/kicad/symbols \
+  --diode-footprint "Diode_SMD:D_SOD-123F" \
+  --switch-footprint "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_{:.2f}u" \
+  --stabilizer-footprint "Mounting_Keyboard_Stabilizer:Stabilizer_Cherry_MX_{:.2f}u"
+
+# RUN python3 -m pip install kinet2pcb==1.1.2
 RUN kinet2pcb -i $PROJECT_NAME.net \
   --libraries /usr/share/kicad/footprints \
               $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Switch_Keyboard_Hybrid.pretty \
+              $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Mounting_Keyboard_Stabilizer.pretty \
   --output $PROJECT_NAME.kicad_pcb
 
 RUN python3 -m kbplacer --board $PROJECT_NAME.kicad_pcb \
