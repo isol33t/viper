@@ -209,7 +209,7 @@ This project is inspired by [Automated Keyboard PCB design with ergogen and kbpl
 
 ## License
 
-[To be determined - will be open source, preferably MIT]
+[MIT](LICENSE)
 
 ---
 

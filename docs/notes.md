@@ -2,6 +2,8 @@
 
 *Consolidated notes and research for the Duck Viper v1 PCB project*
 
+## Design Decision Log
+
 - 2025-05: restart PCB project
 - - manual placement of basic viper pcb, no leds
 - - discovered adamws/kicad-kbplacer
@@ -11,6 +13,20 @@
 - - removed iso enter/split left shift
 - - considering split hhkb layout
 - - - requires qfn instead of qfp
+
+## Component Sourcing
+
+I found a box of components, from a previous attempt, based on [evyd13/plain60-c](https://github.com/evyd13/plain60-c#bill-of-materials-bom), yet some are currently out ot stock.
+
+- Stick with 0805 packages
+- Asian brands are Okay
+- x7r capacitors are preferred
+- ... by a single brand, possibly hre?
+- - uniroyal
+- - nexperia
+- - https://www.lcsc.com/supplier/featured-asian-brands
+- - qfp https://www.lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_Microchip-Tech-ATMEGA32U4-AU_C44854.html
+- - qfn https://www.lcsc.com/product-detail/Microcontroller-Units-MCUs-MPUs-SOCs_Microchip-Tech-ATMEGA32U4-MU_C112161.html
 
 ## Quick Reference
 

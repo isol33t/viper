@@ -58,7 +58,7 @@ RUN cd /kicad-kbplacer \
   && hatch run tools:layout2schematic -in $WORK_PATH/$PROJECT_NAME-kle.json \
   -out $WORK_PATH/$PROJECT_NAME.kicad_sch -f \
   -swf "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_1.00u" \
-  -df "Diode_SMD:D_SOD-123F"
+  -df "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 
 # this is required, otherwise netlist will contain many 'unconnected' pads
 # is this required with kle2netlist?
@@ -69,7 +69,7 @@ RUN cd /kicad-kbplacer \
 RUN python3 -m pip install git+https://github.com/adamws/kle2netlist.git@develop
 RUN kle2netlist --layout $WORK_PATH/$PROJECT_NAME-kle.json --output $PROJECT_NAME.net \
   --lib-path /usr/share/kicad/symbols \
-  --diode-footprint "Diode_SMD:D_SOD-123F" \
+  --diode-footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" \
   --switch-footprint "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_{:.2f}u" \
   --stabilizer-footprint "Mounting_Keyboard_Stabilizer:Stabilizer_Cherry_MX_{:.2f}u"
 
