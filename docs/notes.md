@@ -13,6 +13,43 @@
 - - removed iso enter/split left shift
 - - considering split hhkb layout
 - - - requires qfn instead of qfp
+- footprint placement
+- - voyager60 usb-c
+- - voyager60 qfn 
+- - gh60 qfp
+- [decoupling cap placement](https://components101.com/articles/decoupling-capacitor-vs-bypass-capacitors-working-and-applications)
+- - The positioning involves two different capacitors, consider a capacitor of capacitance 10µF placed away from the IC which is used to smooth out the low frequency changes in the power supply and a 0.1 µF capacitor kept closer to the IC which is used to smooth the high frequency changes in the power supply.
+- - 10µF placed away
+- - .1µF close to pins
+- - for voyager60: move 10µF cap further away
+- - add additional .1µF cap where 10µF currently sits
+- improve kicad docs
+- nice template, https://github.com/nguyen-v/KiCAD_Templates/tree/master
+- - eeschema
+- - https://www.youtube.com/watch?v=_ZjyeltLMAg
+- - pcbnew
+- - https://www.youtube.com/watch?v=_ZjyeltLMAg&list=WL&index=109&t=1305s
+
+You probably shouldn't connect the USB shield to GND, or if you do it should be through a cap and something like a 10M resistor. This is to avoid emitting unwanted RFI.
+!
+https://geekhack.org/index.php?topic=48851.msg2356672#msg2356672
+
+- jp60
+- - usb-c shield to earth, earth to ferrite bead to gnd
+- tsuki
+- - usb-c shield to junction, 1 to 4.7nF cap then gnd, another to 1M resistor then GND
+- - no ferrite bead
+- - mounting hole to case ESD
+- - case mounting hole ESD to junction, 1 to 4.7nF cap then gnd, another to 1M resistor then GND
+- https://geekhack.org/index.php?topic=48851.msg2361099#msg2361099
+- - bpiphany: For the USB shield there seem to be as many different recommendations as there are possible ways to combine resistor/capacitor/inductor networks or directly tie it to GND or floating. It's hard to tell what to use when/where/why.
+- ground plane crystal: https://geekhack.org/index.php?topic=48851.msg2406698#msg2406698
+- - I think it's more about keeping the "noise" from the oscillator away from the plane. You ideally want to surround the oscillator circuit with ground, on the sides and below. You then connect this "cage" at a single point to the board ground plane.
+- resistors for usb close to usb or mcu?
+- - https://geekhack.org/index.php?topic=48851.msg2481179#msg2481179
+- - ESD/EMI protection deivces should be placed near USB receptacle while termination(impedance matcning) resistors should be placed near controller.
+- - We already know empirically that it doesn't matter very much for keyboards, though, this simple design guide will be still helpful for us.
+
 
 ## Component Sourcing
 

@@ -27376,16 +27376,6 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 160.02) (xy 457.2 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19bb5b72-226e-4a31-8d25-b50e79f808e5")
-	)
-	(wire
-		(pts
 			(xy 69.85 186.69) (xy 76.2 186.69)
 		)
 		(stroke
@@ -32916,6 +32906,16 @@
 	)
 	(wire
 		(pts
+			(xy 429.26 160.02) (xy 445.77 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c727cb07-562d-4687-927f-092303a0cd26")
+	)
+	(wire
+		(pts
 			(xy 165.1 60.96) (xy 165.1 64.77)
 		)
 		(stroke
@@ -36330,7 +36330,7 @@
 	)
 	(global_label "LED_GND"
 		(shape input)
-		(at 469.9 154.94 90)
+		(at 458.47 154.94 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -36340,7 +36340,7 @@
 		)
 		(uuid "5c59e67f-76ef-43b4-bd8c-0794e0510309")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 469.9 143.6696 90)
+			(at 458.47 143.6696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37650,7 +37650,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 102.87 88.9 90)
 			(effects
 				(font
@@ -37866,7 +37866,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 127 165.1 90)
 			(effects
 				(font
@@ -37934,7 +37934,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 115.57 109.22 90)
 			(effects
 				(font
@@ -38215,7 +38215,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 215.9 185.42 90)
 			(effects
 				(font
@@ -38720,7 +38720,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 139.7 185.42 90)
 			(effects
 				(font
@@ -38855,7 +38855,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 215.9 205.74 90)
 			(effects
 				(font
@@ -39127,7 +39127,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 101.6 205.74 90)
 			(effects
 				(font
@@ -39343,7 +39343,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 179.07 109.22 90)
 			(effects
 				(font
@@ -39492,7 +39492,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 204.47 109.22 90)
 			(effects
 				(font
@@ -39717,7 +39717,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 302.26 367.03 90)
 			(effects
 				(font
@@ -39918,7 +39918,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 101.6 226.06 90)
 			(effects
 				(font
@@ -39986,7 +39986,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 128.27 68.58 90)
 			(effects
 				(font
@@ -40135,7 +40135,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 140.97 109.22 90)
 			(effects
 				(font
@@ -40351,7 +40351,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 165.1 165.1 90)
 			(effects
 				(font
@@ -40641,7 +40641,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 128.27 88.9 90)
 			(effects
 				(font
@@ -40924,7 +40924,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 63.5 185.42 90)
 			(effects
 				(font
@@ -40976,7 +40976,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 467.36 160.02 0)
+		(at 455.93 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40985,7 +40985,7 @@
 		(fields_autoplaced yes)
 		(uuid "2dbd9176-b164-4fce-8e18-e551f00f0faf")
 		(property "Reference" "Q1"
-			(at 473.71 158.7499 0)
+			(at 462.28 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40994,7 +40994,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 473.71 161.2899 0)
+			(at 462.28 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41003,7 +41003,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 472.44 161.925 0)
+			(at 461.01 161.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41014,7 +41014,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 472.44 163.83 0)
+			(at 461.01 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41024,7 +41024,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 467.36 160.02 0)
+			(at 455.93 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41201,7 +41201,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 152.4 185.42 90)
 			(effects
 				(font
@@ -41269,7 +41269,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 191.77 88.9 90)
 			(effects
 				(font
@@ -41485,7 +41485,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 152.4 205.74 90)
 			(effects
 				(font
@@ -41620,7 +41620,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 88.9 226.06 90)
 			(effects
 				(font
@@ -41755,7 +41755,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 139.7 165.1 90)
 			(effects
 				(font
@@ -41823,7 +41823,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 191.77 68.58 90)
 			(effects
 				(font
@@ -42107,7 +42107,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 203.2 246.38 90)
 			(effects
 				(font
@@ -42505,7 +42505,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 204.47 48.26 90)
 			(effects
 				(font
@@ -42932,7 +42932,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 140.97 48.26 90)
 			(effects
 				(font
@@ -43081,7 +43081,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 229.87 68.58 90)
 			(effects
 				(font
@@ -43379,7 +43379,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 114.3 205.74 90)
 			(effects
 				(font
@@ -43569,7 +43569,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 77.47 68.58 90)
 			(effects
 				(font
@@ -43718,7 +43718,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 191.77 109.22 90)
 			(effects
 				(font
@@ -43867,7 +43867,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 77.47 88.9 90)
 			(effects
 				(font
@@ -44016,7 +44016,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 64.77 68.58 90)
 			(effects
 				(font
@@ -44232,7 +44232,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 190.5 185.42 90)
 			(effects
 				(font
@@ -44300,7 +44300,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 64.77 88.9 90)
 			(effects
 				(font
@@ -44517,7 +44517,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 63.5 165.1 90)
 			(effects
 				(font
@@ -44730,7 +44730,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 139.7 205.74 90)
 			(effects
 				(font
@@ -44865,7 +44865,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 217.17 48.26 90)
 			(effects
 				(font
@@ -45093,7 +45093,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 204.47 68.58 90)
 			(effects
 				(font
@@ -45242,7 +45242,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 179.07 48.26 90)
 			(effects
 				(font
@@ -45391,7 +45391,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 153.67 48.26 90)
 			(effects
 				(font
@@ -45607,7 +45607,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 228.6 226.06 90)
 			(effects
 				(font
@@ -45899,7 +45899,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 88.9 165.1 90)
 			(effects
 				(font
@@ -45967,7 +45967,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 191.77 48.26 90)
 			(effects
 				(font
@@ -46183,7 +46183,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 190.5 205.74 90)
 			(effects
 				(font
@@ -46252,7 +46252,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 64.77 48.26 90)
 			(effects
 				(font
@@ -46468,7 +46468,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 165.1 185.42 90)
 			(effects
 				(font
@@ -46536,7 +46536,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 179.07 88.9 90)
 			(effects
 				(font
@@ -46820,7 +46820,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 228.6 205.74 90)
 			(effects
 				(font
@@ -46888,7 +46888,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 128.27 48.26 90)
 			(effects
 				(font
@@ -47104,7 +47104,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 49.53 205.74 90)
 			(effects
 				(font
@@ -47172,7 +47172,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 217.17 68.58 90)
 			(effects
 				(font
@@ -47389,7 +47389,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 217.17 129.54 90)
 			(effects
 				(font
@@ -47800,7 +47800,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 127 226.06 90)
 			(effects
 				(font
@@ -47935,7 +47935,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 63.5 226.06 90)
 			(effects
 				(font
@@ -48068,7 +48068,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 102.87 48.26 90)
 			(effects
 				(font
@@ -48284,7 +48284,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 215.9 226.06 90)
 			(effects
 				(font
@@ -48419,7 +48419,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 152.4 165.1 90)
 			(effects
 				(font
@@ -48487,7 +48487,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 77.47 109.22 90)
 			(effects
 				(font
@@ -48770,7 +48770,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 76.2 246.38 90)
 			(effects
 				(font
@@ -48905,7 +48905,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 177.8 185.42 90)
 			(effects
 				(font
@@ -49038,7 +49038,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 77.47 129.54 90)
 			(effects
 				(font
@@ -49187,7 +49187,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 128.27 109.22 90)
 			(effects
 				(font
@@ -49482,7 +49482,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 177.8 226.06 90)
 			(effects
 				(font
@@ -49617,7 +49617,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 101.6 185.42 90)
 			(effects
 				(font
@@ -49752,7 +49752,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 88.9 185.42 90)
 			(effects
 				(font
@@ -49886,7 +49886,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 215.9 246.38 90)
 			(effects
 				(font
@@ -50016,7 +50016,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 166.37 48.26 90)
 			(effects
 				(font
@@ -50165,7 +50165,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 229.87 109.22 90)
 			(effects
 				(font
@@ -50449,7 +50449,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 179.07 68.58 90)
 			(effects
 				(font
@@ -50665,7 +50665,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 76.2 165.1 90)
 			(effects
 				(font
@@ -50733,7 +50733,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 166.37 88.9 90)
 			(effects
 				(font
@@ -50881,7 +50881,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 302.26 275.59 90)
 			(effects
 				(font
@@ -51015,7 +51015,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 88.9 205.74 90)
 			(effects
 				(font
@@ -51227,7 +51227,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 88.9 246.38 90)
 			(effects
 				(font
@@ -51295,7 +51295,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 64.77 109.22 90)
 			(effects
 				(font
@@ -51658,7 +51658,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 101.6 165.1 90)
 			(effects
 				(font
@@ -51868,7 +51868,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 302.26 336.55 90)
 			(effects
 				(font
@@ -51935,7 +51935,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 217.17 88.9 90)
 			(effects
 				(font
@@ -52163,7 +52163,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 102.87 129.54 90)
 			(effects
 				(font
@@ -52455,7 +52455,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 203.2 226.06 90)
 			(effects
 				(font
@@ -52596,7 +52596,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 77.47 48.26 90)
 			(effects
 				(font
@@ -52745,7 +52745,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 102.87 109.22 90)
 			(effects
 				(font
@@ -52961,7 +52961,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 152.4 226.06 90)
 			(effects
 				(font
@@ -53079,7 +53079,7 @@
 	(symbol
 		(lib_name "R_Small_1")
 		(lib_id "Device:R_Small")
-		(at 459.74 160.02 90)
+		(at 448.31 160.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -53088,15 +53088,15 @@
 		(fields_autoplaced yes)
 		(uuid "aae30c82-9b31-4c01-91ee-f1d4493699a5")
 		(property "Reference" "R66"
-			(at 459.74 154.94 90)
+			(at 448.31 154.94 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 459.74 157.48 90)
+		(property "Value" "1kΩ"
+			(at 448.31 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53104,7 +53104,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0815_2038Metric_Pad1.20x4.05mm_HandSolder"
-			(at 459.74 160.02 0)
+			(at 448.31 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53113,7 +53113,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 459.74 160.02 0)
+			(at 448.31 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53122,7 +53122,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 459.74 160.02 0)
+			(at 448.31 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53230,7 +53230,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 203.2 205.74 90)
 			(effects
 				(font
@@ -53298,7 +53298,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 153.67 109.22 90)
 			(effects
 				(font
@@ -53448,7 +53448,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D_TVS"
+		(property "Value" "SMF9.0CA"
 			(at 320.04 128.2699 90)
 			(effects
 				(font
@@ -53593,7 +53593,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 114.3 165.1 90)
 			(effects
 				(font
@@ -53727,7 +53727,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 90.17 68.58 90)
 			(effects
 				(font
@@ -54009,7 +54009,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 114.3 226.06 90)
 			(effects
 				(font
@@ -54144,7 +54144,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 177.8 205.74 90)
 			(effects
 				(font
@@ -54279,7 +54279,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 115.57 68.58 90)
 			(effects
 				(font
@@ -54586,7 +54586,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 229.87 88.9 90)
 			(effects
 				(font
@@ -54734,7 +54734,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 302.26 306.07 90)
 			(effects
 				(font
@@ -54801,7 +54801,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 90.17 129.54 90)
 			(effects
 				(font
@@ -55017,7 +55017,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 204.47 129.54 90)
 			(effects
 				(font
@@ -55233,7 +55233,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 177.8 165.1 90)
 			(effects
 				(font
@@ -55441,7 +55441,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 127 185.42 90)
 			(effects
 				(font
@@ -55641,7 +55641,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 190.5 165.1 90)
 			(effects
 				(font
@@ -55709,7 +55709,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 90.17 48.26 90)
 			(effects
 				(font
@@ -56065,7 +56065,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 203.2 185.42 90)
 			(effects
 				(font
@@ -56200,7 +56200,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 101.6 246.38 90)
 			(effects
 				(font
@@ -56335,7 +56335,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 127 205.74 90)
 			(effects
 				(font
@@ -56469,7 +56469,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 115.57 48.26 90)
 			(effects
 				(font
@@ -56697,7 +56697,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 153.67 88.9 90)
 			(effects
 				(font
@@ -56892,7 +56892,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 469.9 165.1 0)
+		(at 458.47 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -56901,7 +56901,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0a614a1-9e82-4f12-a133-a5399437db17")
 		(property "Reference" "#PWR06"
-			(at 469.9 171.45 0)
+			(at 458.47 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56910,7 +56910,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 469.9 170.18 0)
+			(at 458.47 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56918,7 +56918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 469.9 165.1 0)
+			(at 458.47 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56927,7 +56927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 469.9 165.1 0)
+			(at 458.47 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56936,7 +56936,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 469.9 165.1 0)
+			(at 458.47 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57041,7 +57041,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 76.2 226.06 90)
 			(effects
 				(font
@@ -57176,7 +57176,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 203.2 165.1 90)
 			(effects
 				(font
@@ -57244,7 +57244,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 115.57 88.9 90)
 			(effects
 				(font
@@ -57393,7 +57393,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 140.97 68.58 90)
 			(effects
 				(font
@@ -57609,7 +57609,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 76.2 185.42 90)
 			(effects
 				(font
@@ -57739,7 +57739,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 102.87 68.58 90)
 			(effects
 				(font
@@ -57888,7 +57888,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 204.47 88.9 90)
 			(effects
 				(font
@@ -58104,7 +58104,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 228.6 165.1 90)
 			(effects
 				(font
@@ -58239,7 +58239,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 190.5 226.06 90)
 			(effects
 				(font
@@ -58374,7 +58374,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 76.2 205.74 90)
 			(effects
 				(font
@@ -58576,7 +58576,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 165.1 205.74 90)
 			(effects
 				(font
@@ -58724,7 +58724,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 140.97 88.9 90)
 			(effects
 				(font
@@ -58935,7 +58935,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 166.37 68.58 90)
 			(effects
 				(font
@@ -59084,7 +59084,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 229.87 48.26 90)
 			(effects
 				(font
@@ -59233,7 +59233,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 166.37 109.22 90)
 			(effects
 				(font
@@ -59449,7 +59449,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 139.7 226.06 90)
 			(effects
 				(font
@@ -59584,7 +59584,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 215.9 165.1 90)
 			(effects
 				(font
@@ -59719,7 +59719,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 114.3 185.42 90)
 			(effects
 				(font
@@ -59787,7 +59787,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 90.17 88.9 90)
 			(effects
 				(font
@@ -59936,7 +59936,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 90.17 109.22 90)
 			(effects
 				(font
@@ -60154,7 +60154,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Polyfuse_Small"
+		(property "Value" "1.5A trip PTC"
 			(at 294.64 142.2399 0)
 			(effects
 				(font
@@ -60454,7 +60454,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 228.6 185.42 90)
 			(effects
 				(font
@@ -60522,7 +60522,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 153.67 68.58 90)
 			(effects
 				(font
@@ -60738,7 +60738,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "470Ω"
 			(at 165.1 226.06 90)
 			(effects
 				(font
@@ -60946,7 +60946,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1n4148"
+		(property "Value" "1N4148"
 			(at 217.17 109.22 90)
 			(effects
 				(font
