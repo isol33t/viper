@@ -1,5 +1,5 @@
 ARG WORK_PATH=/keyboard
-ARG PROJECT_NAME=viper
+ARG PROJECT_NAME=viper-split-hhkb
 
 FROM admwscki/kicad-kbplacer-primary:8.0.9-jammy
 
@@ -40,7 +40,7 @@ RUN git clone https://github.com/adamws/kicad-kbplacer.git \
   # && python3 -m pip install .
 
 RUN mkdir -p $WORK_PATH
-COPY kle/keyboard-layout-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
+COPY kle/keyboard-layout-split-hhkb-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
 
 WORKDIR $WORK_PATH
 

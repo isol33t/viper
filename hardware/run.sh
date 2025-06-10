@@ -5,6 +5,6 @@ if [ -z "$CIRCLE_SHA1" ]; then
 else
   KBPLACER_REVISION=$CIRCLE_SHA1
 fi
-docker build --build-arg="KBPLACER_REVISION=$KBPLACER_REVISION" -t viper .
-docker cp $(docker create --name viper viper:latest /bin/sh):/viper.zip .
-docker rm viper
+docker build --build-arg="KBPLACER_REVISION=$KBPLACER_REVISION" -t viper-split-hhkb .
+docker cp $(docker create --name viper-split-hhkb viper-split-hhkb:latest /bin/sh):/viper-split-hhkb.zip .
+docker rm viper-split-hhkb

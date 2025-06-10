@@ -37035,7 +37035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c66b5d5")
-		(property "Reference" "L1"
+		(property "Reference" "LF1"
 			(at 336.55 55.9816 0)
 			(effects
 				(font
@@ -37082,7 +37082,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "L1")
+					(reference "LF1")
 					(unit 1)
 				)
 			)
@@ -38600,7 +38600,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f11ad6e-88ef-4cdf-92bb-b644a14c553f")
-		(property "Reference" "L2"
+		(property "Reference" "LF2"
 			(at 336.55 62.3316 0)
 			(effects
 				(font
@@ -38647,7 +38647,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "L2")
+					(reference "LF2")
 					(unit 1)
 				)
 			)
@@ -51093,7 +51093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "927b552c-ce14-45b7-b1af-a1c332355e77")
-		(property "Reference" "L5"
+		(property "Reference" "L1"
 			(at 295.91 224.79 90)
 			(effects
 				(font
@@ -51154,7 +51154,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "L5")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -57686,7 +57686,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e44f33ef-fdbe-4eec-ba30-b4573f1ba71e")
-		(property "Reference" "L4"
+		(property "Reference" "LF4"
 			(at 336.55 75.0316 0)
 			(effects
 				(font
@@ -57733,7 +57733,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "L4")
+					(reference "LF4")
 					(unit 1)
 				)
 			)
@@ -58882,7 +58882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb8770a6-b9b7-4fdf-9d8d-4914ad1c1235")
-		(property "Reference" "L3"
+		(property "Reference" "LF2"
 			(at 336.55 68.6816 0)
 			(effects
 				(font
@@ -58929,7 +58929,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "L3")
+					(reference "LF2")
 					(unit 1)
 				)
 			)
