@@ -26569,10 +26569,6 @@
 		(uuid "7907e604-ac0f-4594-bab0-7f843df15196")
 	)
 	(no_connect
-		(at 429.26 142.24)
-		(uuid "7b10dd20-b3d5-4448-ae81-87e0636c65f0")
-	)
-	(no_connect
 		(at 398.78 157.48)
 		(uuid "84a77fa1-0701-471f-ae4d-bb052df4fcfc")
 	)
@@ -36616,6 +36612,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAPS_LED"
+		(shape input)
+		(at 429.26 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "935a0bf1-33c7-4e7a-99e8-036387757510")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 441.498 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
