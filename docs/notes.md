@@ -49,7 +49,7 @@ https://geekhack.org/index.php?topic=48851.msg2356672#msg2356672
 - - https://geekhack.org/index.php?topic=48851.msg2481179#msg2481179
 - - ESD/EMI protection deivces should be placed near USB receptacle while termination(impedance matcning) resistors should be placed near controller.
 - - We already know empirically that it doesn't matter very much for keyboards, though, this simple design guide will be still helpful for us.
-
+- [Why does the ATmega32 have two VCC & GND pins?](https://microchip.my.site.com/s/article/Why-does-the-ATmega32-have-two-VCC-GND-pins)
 
 ## Component Sourcing
 

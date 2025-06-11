@@ -1,13 +1,13 @@
 ARG WORK_PATH=/keyboard
-ARG PROJECT_NAME=viper-split-hhkb
+ARG PROJECT_NAME=viper-10u
 
-FROM admwscki/kicad-kbplacer-primary:8.0.9-jammy
+FROM admwscki/kicad-kbplacer-primary:9.0.2-jammy
 
 # this revision has been used when [1] has been written
 # [1] https://adamws.github.io/keyboard-pcb-design-with-ergogen-and-kbplacer/
 ARG KBPLACER_REVISION=ca69cbc0f1de216fd50f63ba26180ad683a91270
 
-ARG KICAD_3RDPARTY_PATH=/root/.local/share/kicad/8.0/3rdparty
+ARG KICAD_3RDPARTY_PATH=/root/.local/share/kicad/9.0/3rdparty
 ARG WORK_PATH
 ARG PROJECT_NAME
 
@@ -34,31 +34,52 @@ RUN cd $KICAD_3RDPARTY_PATH \
   && cd .. && rm -rf tmp
 
 RUN python3 -m pip install hatch
+# RUN python3 -m pip install git+https://github.com/adamws/kle2netlist.git@develop@2f6d8a0cc9a103a2b63d162d1e4ccd297c489682
+RUN python3 -m pip install git+https://github.com/adamws/kle2netlist.git@develop
 RUN git clone https://github.com/adamws/kicad-kbplacer.git \
   && cd kicad-kbplacer \
   && git checkout $KBPLACER_REVISION
   # && python3 -m pip install .
 
 RUN mkdir -p $WORK_PATH
-COPY kle/keyboard-layout-split-hhkb-collapsed.json $WORK_PATH/$PROJECT_NAME-kle.json
+COPY kle/keyboard-layout-via-10u.json $WORK_PATH/keyboard-layout-via-10u.json
 
 WORKDIR $WORK_PATH
 
 COPY template.kicad_pro $WORK_PATH/$PROJECT_NAME.kicad_pro
 RUN sed -i 's/template\.kicad_pro/$PROJECT_NAME\.kicad_pro/g' $PROJECT_NAME.kicad_pro
 
-# RUN python3 -m kbplacer.kle_serial \
-#   -in keyboard-layout-collapsed.json -inform KLE_RAW \
-#   -outform KLE_RAW -out $PROJECT_NAME-kle.json
+RUN python3 -m kbplacer.kle_serial \
+  -in keyboard-layout-via-10u.json -inform KLE_VIA \
+  -outform KLE_RAW -collapse -out $PROJECT_NAME-kle.json
 
 # fix labels (to be fixed in kbplacer)
 # RUN sed -i 's/[RC]//g' $PROJECT_NAME-kle.json
 
-RUN cd /kicad-kbplacer \
+# hacky patch to create led matrix
+# requires manual work, remove all labels
+# connect all columns, add vnc
+# connect all rows, add gnd
+# separate caps led
+# LED_SMD:LED_0201_0603Metric is a placeholder
+# https://github.com/kiswitch/kiswitch/pull/40
+# replace with MX/Alps compatible led, maybe from ai03-2725/MX_V2,
+# Switch_Misc.pretty/MX-LED-PolarityMarked.kicad_mod
+# extract netlist of led matrix, merge somehow?
+# pcbnew can append a board
+
+COPY kicad-kbplacer-led.patch /kicad-kbplacer
+
+RUN cd /kicad-kbplacer && \
+  git apply kicad-kbplacer-led.patch \
   && hatch run tools:layout2schematic -in $WORK_PATH/$PROJECT_NAME-kle.json \
   -out $WORK_PATH/$PROJECT_NAME.kicad_sch -f \
   -swf "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_1.00u" \
-  -df "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+  -df "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" \
+  && hatch run tools:layout2ledschematic -in $WORK_PATH/$PROJECT_NAME-kle.json \
+  -out $WORK_PATH/$PROJECT_NAME-led.kicad_sch -f \
+  -rf "Resistor_SMD:R_0805_2012Metric" \
+  -df "LED_SMD:LED_0201_0603Metric"
 
 # this is required, otherwise netlist will contain many 'unconnected' pads
 # is this required with kle2netlist?
@@ -66,14 +87,12 @@ RUN cd /kicad-kbplacer \
 # RUN xvfb-run ./eeschema-open-and-save.sh $PROJECT_NAME.kicad_sch
 
 # RUN kicad-cli sch export netlist --output $PROJECT_NAME.net $PROJECT_NAME.kicad_sch
-RUN python3 -m pip install git+https://github.com/adamws/kle2netlist.git@develop
-RUN kle2netlist --layout $WORK_PATH/$PROJECT_NAME-kle.json --output $PROJECT_NAME.net \
+RUN kle2netlist --layout $WORK_PATH/$PROJECT_NAME-kle.json --netlist-output $PROJECT_NAME.net \
   --lib-path /usr/share/kicad/symbols \
   --diode-footprint "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" \
   --switch-footprint "Switch_Keyboard_Hybrid:SW_Hybrid_Cherry_MX_Alps_{:.2f}u" \
   --stabilizer-footprint "Mounting_Keyboard_Stabilizer:Stabilizer_Cherry_MX_{:.2f}u"
 
-# RUN python3 -m pip install kinet2pcb==1.1.2
 RUN kinet2pcb -i $PROJECT_NAME.net \
   --libraries /usr/share/kicad/footprints \
               $KICAD_3RDPARTY_PATH/footprints/$SWITCH_LIBRARY/Switch_Keyboard_Hybrid.pretty \
@@ -82,6 +101,7 @@ RUN kinet2pcb -i $PROJECT_NAME.net \
 
 RUN python3 -m kbplacer --board $PROJECT_NAME.kicad_pcb \
   --layout $PROJECT_NAME-kle.json \
+  --log-level DEBUG > $PROJECT_NAME.log 2>&1 \
   --diode "D{} CUSTOM 5.08 4 90 BACK" \
   --route-switches-with-diodes \
   --route-rows-and-columns
@@ -91,12 +111,16 @@ RUN kicad-cli pcb export svg --exclude-drawing-sheet \
 
 RUN zip -r $PROJECT_NAME.zip \
   $PROJECT_NAME-kle.json \
+  $PROJECT_NAME.log \
   $PROJECT_NAME.kicad_pro \
+  $PROJECT_NAME-led.kicad_sch \
   $PROJECT_NAME.kicad_sch \
   $PROJECT_NAME.kicad_pcb \
   $PROJECT_NAME.net \
   $PROJECT_NAME.svg
 
+# plate generation with 1.5u cutouts doesn't work
+# maybe look into exporting edgecuts as svg
 # sanity check for plate generation tool
 # COPY generate-plate.sh $WORK_PATH
 # RUN xvfb-run -a ./generate-plate.sh $KBPLACER_REVISION
