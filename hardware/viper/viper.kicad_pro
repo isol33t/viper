@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -181,7 +187,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -208,7 +216,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -220,7 +233,36 @@
     },
     "layer_pairs": [],
     "layer_presets": [],
-    "viewports": []
+    "viewports": [
+      {
+        "h": 39468194.77018524,
+        "name": "Backspace",
+        "w": 84274301.1281414,
+        "x": 289713849.4359324,
+        "y": 27636902.6149327
+      },
+      {
+        "h": 29799519.16371613,
+        "name": "CPU",
+        "w": 63629301.16514795,
+        "x": 63435349.41743148,
+        "y": 56220240.41816775
+      },
+      {
+        "h": 147117233.42939484,
+        "name": "Full",
+        "w": 314131469.740634,
+        "x": 52484265.12968154,
+        "y": 2376383.285303456
+      },
+      {
+        "h": 22688800.84723106,
+        "name": "USB",
+        "w": 82089341.95421794,
+        "x": 41378329.02287917,
+        "y": 24723599.57638193
+      }
+    ]
   },
   "boards": [],
   "cvpcb": {
@@ -447,7 +489,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "0_locallib"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -486,9 +530,9 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "viper-kle2netlist.net",
+      "netlist": "viper.net",
       "plot": "",
-      "pos_files": "",
+      "pos_files": "position/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -590,6 +634,18 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -651,6 +707,14 @@
     [
       "9e45a776-7007-48ff-b543-dc98423173b7",
       "Root"
+    ],
+    [
+      "f074c61c-c7d5-4015-92e9-6ed630b0f158",
+      "Switch-Matrix"
+    ],
+    [
+      "922499e9-9339-4a46-adbc-1b6a54df4581",
+      "LED-Matrix"
     ]
   ],
   "text_variables": {}

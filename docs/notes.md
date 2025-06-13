@@ -51,6 +51,16 @@ https://geekhack.org/index.php?topic=48851.msg2356672#msg2356672
 - - We already know empirically that it doesn't matter very much for keyboards, though, this simple design guide will be still helpful for us.
 - [Why does the ATmega32 have two VCC & GND pins?](https://microchip.my.site.com/s/article/Why-does-the-ATmega32-have-two-VCC-GND-pins)
 
+- alternative docker idea
+- create atmega template with linked sheets
+- copy to docker build container
+- create new schematics -> path of linked sheets
+- - run save-schematic-script
+- export netlist from schematic
+- - includes linked sheets, in theory
+- kinet2pcb complete netlist
+- kbplacer/pos2orient/???
+
 ## Component Sourcing
 
 I found a box of components, from a previous attempt, based on [evyd13/plain60-c](https://github.com/evyd13/plain60-c#bill-of-materials-bom), yet some are currently out ot stock.

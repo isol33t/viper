@@ -1,0 +1,143 @@
+(footprint "MX-Lock-LED-Reversed"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 6.858 0)
+		(layer "Dwgs.User")
+		(hide yes)
+		(uuid "c7f1e9b1-2796-46f4-9feb-8152f3e37b3b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED"
+		(at -5.3 5.95 0)
+		(layer "Dwgs.User")
+		(uuid "abd696f3-6799-4d79-8f95-a3b15a5975aa")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "efb3873a-2e2a-44d9-8552-4a955945dadb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "adc012bb-66e7-4b1b-aed7-63ff9d1fb9e8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -7 -7)
+		(end -7 -5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "074513c1-a3f3-4633-8ebd-ee8e714e22d1")
+	)
+	(fp_line
+		(start -7 5)
+		(end -7 7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "565f1b41-9ff0-4ace-bd07-3ba371def360")
+	)
+	(fp_line
+		(start -7 7)
+		(end -5 7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "2dc83f71-7a68-446c-a1ea-d4fb02f9b3d7")
+	)
+	(fp_line
+		(start -5 -7)
+		(end -7 -7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "aa628361-1ec0-42c2-8cf9-5a3b6c2ff197")
+	)
+	(fp_line
+		(start 5 -7)
+		(end 7 -7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "f62daedf-f091-4506-9559-5ce05853fe18")
+	)
+	(fp_line
+		(start 5 7)
+		(end 7 7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "2d740fc3-4802-4261-9ca2-2a250b38a6d5")
+	)
+	(fp_line
+		(start 7 -7)
+		(end 7 -5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "18e67a76-35f9-4d27-8d9d-df5e8be5bffb")
+	)
+	(fp_line
+		(start 7 7)
+		(end 7 5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "073cf258-6171-4281-b828-b7e2a4a5b08f")
+	)
+	(pad "1" thru_hole circle
+		(at 3.81 5.08)
+		(size 1.905 1.905)
+		(drill 1.04)
+		(layers "*.Cu" "B.Mask")
+		(remove_unused_layers no)
+		(uuid "a8ba7784-c951-4f75-a800-6f765a624229")
+	)
+	(embedded_fonts no)
+)

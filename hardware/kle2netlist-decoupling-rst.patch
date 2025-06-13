@@ -1,0 +1,77 @@
+diff --git a/src/kle2netlist/circuits/atmega32u4.py b/src/kle2netlist/circuits/atmega32u4.py
+index 2a0b105..7417158 100644
+--- a/src/kle2netlist/circuits/atmega32u4.py
++++ b/src/kle2netlist/circuits/atmega32u4.py
+@@ -604,18 +604,18 @@ def atmega32u4(footprints, row_column_pin_order: List[str]) -> skidl.Interface:
+ 
+     # decoupling capacitors, 0.1u for each pin (as recommended in datasheet)
+     # and one bigger for VBUS, some designs use less and work just as well
+-    c3, c4, c5, c6 = C(num_copies=4, value="0.1u")
+-    c7 = C(value="4.7u")  # could be 10u
++    c3, c4, c5 = C(num_copies=3, value="0.1u")
++    c6 = C(value="10u")  # could be 10u
+ 
+-    for c in [c3, c4, c5, c6, c7]:
++    for c in [c3, c4, c5, c6]:
+         vcc += c[1]
+         gnd += c[2]
+ 
+     # ucap
+-    c8 = C(value="1u")
++    c7 = C(value="1u")
+     net_ucap = skidl.Net("mcu/UCAP")
+-    net_ucap += c8[1], uc["UCAP"]
+-    gnd += c8[2]
++    net_ucap += c7[1], uc["UCAP"]
++    gnd += c7[2]
+ 
+     # resistors on USB lines
+     r1, r2 = R(num_copies=2, value="22")
+@@ -632,7 +632,7 @@ def atmega32u4(footprints, row_column_pin_order: List[str]) -> skidl.Interface:
+         "Switch",
+         "SW_SPST",
+         footprint=footprints["button"],
+-        ref="RST",
++        ref="RST1",
+     )
+ 
+     net_hwb = skidl.Net("mcu/~{HWB}/PE2")
+diff --git a/src/kle2netlist/circuits/usb.py b/src/kle2netlist/circuits/usb.py
+index 70f9ea0..30be214 100644
+--- a/src/kle2netlist/circuits/usb.py
++++ b/src/kle2netlist/circuits/usb.py
+@@ -188,20 +188,26 @@ def usb_udb_clone() -> skidl.Interface:
+         footprint=usb_footprint,
+     )
+ 
+-    esd_footprint = "Package_SON:USON-10_2.5x1.0mm_P0.5mm"  # lcsc C138714
++    esd_footprint = "Package_TO_SOT_SMD:SOT-23-6"  # lcsc C7519
+     esd_protection = skidl.Part(
+-        "Power_Protection", "TPD4E05U06DQA", footprint=esd_footprint
++        "Power_Protection", "USBLC6-2SC6", footprint=esd_footprint
+     )
+ 
+     vbus = skidl.Net("VBUS")
+-    vbus += usb["VBUS"]
+-    gnd += usb["GND", "SHIELD"], esd_protection["GND"]
++    vbus += usb["VBUS"], esd_protection["VBUS"]
++    gnd += usb["GND", "SHIELD"], esd_protection["GND"] # better to add a cap+res or ferrite bead, see notes for gh.org link
++
++    usb_dm = skidl.Net("usb/D-", fixed_name=True)
++    usb_dp = skidl.Net("usb/D+", fixed_name=True)
++    usb_dm += usb["D-"], esd_protection["p1"]
++    usb_dp += usb["D+"], esd_protection["p3"]
+ 
+-    usb_io_dm = skidl.Net("D-", fixed_name=True)
+-    usb_io_dp = skidl.Net("D+", fixed_name=True)
++    esd_ref = esd_protection.ref.lower()
++    usb_io_dm = skidl.Net(f"{esd_ref}/D-", fixed_name=True)
++    usb_io_dp = skidl.Net(f"{esd_ref}/D+", fixed_name=True)
+ 
+-    usb_io_dm += usb["D-"], esd_protection["D1-"], esd_protection["D2-"]
+-    usb_io_dp += usb["D+"], esd_protection["D1+"], esd_protection["D2+"]
++    usb_io_dm += esd_protection["p6"]
++    usb_io_dp += esd_protection["p4"]
+ 
+     R = skidl.Part(
+         "Device",
