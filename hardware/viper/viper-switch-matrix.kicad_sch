@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "9e45a776-7007-48ff-b543-dc98423173b7")
 	(paper "A4")
+	(title_block
+		(title "Psyduck Viper")
+		(date "2025-06-16")
+		(rev "v0.1.0")
+		(comment 1 "A modern interpretation of a Duck Viper v1 PCB")
+	)
 	(lib_symbols
 		(symbol "Device:D_Small"
 			(pin_numbers
@@ -4848,7 +4854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 57.15 72.39 90)
 			(effects
 				(font
@@ -4857,12 +4863,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 57.15 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -4876,6 +4883,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 57.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 57.15 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,6 +4964,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5002,7 +5019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 95.25 72.39 90)
 			(effects
 				(font
@@ -5011,12 +5028,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 95.25 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -5030,6 +5048,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 95.25 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 95.25 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5102,6 +5129,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5156,7 +5184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 57.15 113.03 90)
 			(effects
 				(font
@@ -5165,12 +5193,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 57.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -5184,6 +5213,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 57.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 57.15 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5256,6 +5294,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5323,6 +5362,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5390,6 +5430,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5457,6 +5498,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5511,7 +5553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 146.05 92.71 90)
 			(effects
 				(font
@@ -5520,12 +5562,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 146.05 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -5539,6 +5582,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 146.05 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 146.05 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5598,7 +5650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 95.25 113.03 90)
 			(effects
 				(font
@@ -5607,12 +5659,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 95.25 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -5626,6 +5679,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 95.25 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 95.25 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5698,6 +5760,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5765,6 +5828,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5819,7 +5883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 120.65 52.07 90)
 			(effects
 				(font
@@ -5828,12 +5892,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 120.65 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -5847,6 +5912,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 120.65 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 120.65 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5919,6 +5993,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5973,7 +6048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 158.75 72.39 90)
 			(effects
 				(font
@@ -5982,12 +6057,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 158.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6001,6 +6077,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 158.75 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 158.75 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,6 +6158,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6140,6 +6226,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6208,6 +6295,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6275,6 +6363,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6329,7 +6418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 184.15 92.71 90)
 			(effects
 				(font
@@ -6338,12 +6427,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 184.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6357,6 +6447,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 184.15 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 184.15 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,7 +6515,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 196.85 92.71 90)
 			(effects
 				(font
@@ -6425,12 +6524,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 196.85 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6444,6 +6544,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 196.85 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 196.85 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6516,6 +6625,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6570,7 +6680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 209.55 31.75 90)
 			(effects
 				(font
@@ -6579,12 +6689,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 209.55 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6598,6 +6709,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 209.55 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 209.55 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6657,7 +6777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 44.45 72.39 90)
 			(effects
 				(font
@@ -6666,12 +6786,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 44.45 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6685,6 +6806,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 44.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 44.45 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,7 +6874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 69.85 52.07 90)
 			(effects
 				(font
@@ -6753,12 +6883,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 69.85 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6772,6 +6903,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 69.85 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 69.85 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6831,7 +6971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 31.75 31.75 90)
 			(effects
 				(font
@@ -6840,12 +6980,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 31.75 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6859,6 +7000,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 31.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 31.75 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6918,7 +7068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 171.45 72.39 90)
 			(effects
 				(font
@@ -6927,12 +7077,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 171.45 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -6946,6 +7097,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 171.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 171.45 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7018,6 +7178,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7085,6 +7246,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7139,7 +7301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 95.25 31.75 90)
 			(effects
 				(font
@@ -7148,12 +7310,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 95.25 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -7167,6 +7330,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 95.25 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 95.25 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7239,6 +7411,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7306,6 +7479,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7373,6 +7547,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7440,6 +7615,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7507,6 +7683,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7574,6 +7751,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7628,7 +7806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 82.55 72.39 90)
 			(effects
 				(font
@@ -7637,12 +7815,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 82.55 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -7656,6 +7835,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 82.55 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 82.55 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7728,6 +7916,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7795,6 +7984,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7862,6 +8052,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7916,7 +8107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 171.45 52.07 90)
 			(effects
 				(font
@@ -7925,12 +8116,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 171.45 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -7944,6 +8136,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 171.45 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 171.45 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8016,6 +8217,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8083,6 +8285,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8150,6 +8353,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8217,6 +8421,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8271,7 +8476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 95.25 52.07 90)
 			(effects
 				(font
@@ -8280,12 +8485,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 95.25 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -8299,6 +8505,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 95.25 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 95.25 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8358,7 +8573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 107.95 52.07 90)
 			(effects
 				(font
@@ -8367,12 +8582,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 107.95 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -8386,6 +8602,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 107.95 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 107.95 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8458,6 +8683,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8512,7 +8738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 133.35 31.75 90)
 			(effects
 				(font
@@ -8521,12 +8747,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 133.35 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -8540,6 +8767,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 133.35 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 133.35 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8612,6 +8848,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8679,6 +8916,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8746,6 +8984,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8800,7 +9039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 171.45 113.03 90)
 			(effects
 				(font
@@ -8809,12 +9048,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 171.45 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -8828,6 +9068,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 171.45 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 171.45 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8900,6 +9149,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8967,6 +9217,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9034,6 +9285,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9088,7 +9340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 133.35 72.39 90)
 			(effects
 				(font
@@ -9097,12 +9349,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9116,6 +9369,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 133.35 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 133.35 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9188,6 +9450,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9255,6 +9518,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9309,7 +9573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 69.85 113.03 90)
 			(effects
 				(font
@@ -9318,12 +9582,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 69.85 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9337,6 +9602,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 69.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 69.85 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9396,7 +9670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 184.15 31.75 90)
 			(effects
 				(font
@@ -9405,12 +9679,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 184.15 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9424,6 +9699,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 184.15 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 184.15 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9496,6 +9780,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9550,7 +9835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 158.75 52.07 90)
 			(effects
 				(font
@@ -9559,12 +9844,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 158.75 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9578,6 +9864,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 158.75 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 158.75 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9637,7 +9932,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 146.05 113.03 90)
 			(effects
 				(font
@@ -9646,12 +9941,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 146.05 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9665,6 +9961,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 146.05 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 146.05 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9724,7 +10029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 120.65 113.03 90)
 			(effects
 				(font
@@ -9733,12 +10038,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 120.65 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9752,6 +10058,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 120.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 120.65 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9811,7 +10126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 146.05 31.75 90)
 			(effects
 				(font
@@ -9820,12 +10135,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 146.05 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9839,6 +10155,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 146.05 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 146.05 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9898,7 +10223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 196.85 113.03 90)
 			(effects
 				(font
@@ -9907,12 +10232,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 196.85 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -9926,6 +10252,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 196.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 196.85 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9985,7 +10320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 69.85 92.71 90)
 			(effects
 				(font
@@ -9994,12 +10329,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 69.85 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -10013,6 +10349,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 69.85 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 69.85 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10085,6 +10430,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10139,7 +10485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 107.95 31.75 90)
 			(effects
 				(font
@@ -10148,12 +10494,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 107.95 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -10167,6 +10514,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 107.95 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 107.95 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10239,6 +10595,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10306,6 +10663,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10360,7 +10718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 171.45 31.75 90)
 			(effects
 				(font
@@ -10369,12 +10727,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 171.45 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -10388,6 +10747,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 171.45 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 171.45 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10460,6 +10828,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10527,6 +10896,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10594,6 +10964,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10648,7 +11019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 44.45 31.75 90)
 			(effects
 				(font
@@ -10657,12 +11028,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 44.45 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -10676,6 +11048,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 44.45 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 44.45 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10735,7 +11116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 82.55 52.07 90)
 			(effects
 				(font
@@ -10744,12 +11125,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 82.55 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -10763,6 +11145,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 82.55 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 82.55 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10835,6 +11226,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10889,7 +11281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 171.45 92.71 90)
 			(effects
 				(font
@@ -10898,12 +11290,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 171.45 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -10917,6 +11310,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 171.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 171.45 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10976,7 +11378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 146.05 72.39 90)
 			(effects
 				(font
@@ -10985,12 +11387,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 146.05 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11004,6 +11407,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 146.05 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 146.05 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11063,7 +11475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 196.85 52.07 90)
 			(effects
 				(font
@@ -11072,12 +11484,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 196.85 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11091,6 +11504,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 196.85 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 196.85 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11163,6 +11585,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11230,6 +11653,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11284,7 +11708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 107.95 92.71 90)
 			(effects
 				(font
@@ -11293,12 +11717,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 107.95 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11312,6 +11737,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 107.95 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 107.95 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11371,7 +11805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 31.75 52.07 90)
 			(effects
 				(font
@@ -11380,12 +11814,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 31.75 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11399,6 +11834,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 31.75 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 31.75 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11471,6 +11915,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11538,6 +11983,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11592,7 +12038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 158.75 31.75 90)
 			(effects
 				(font
@@ -11601,12 +12047,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 158.75 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11620,6 +12067,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 158.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 158.75 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11692,6 +12148,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11746,7 +12203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 158.75 92.71 90)
 			(effects
 				(font
@@ -11755,12 +12212,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 158.75 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11774,6 +12232,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 158.75 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 158.75 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11833,7 +12300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 31.75 72.39 90)
 			(effects
 				(font
@@ -11842,12 +12309,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 31.75 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11861,6 +12329,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 31.75 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 31.75 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11920,7 +12397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 196.85 31.75 90)
 			(effects
 				(font
@@ -11929,12 +12406,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 196.85 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -11948,6 +12426,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 196.85 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 196.85 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12020,6 +12507,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12074,7 +12562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 120.65 31.75 90)
 			(effects
 				(font
@@ -12083,12 +12571,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 120.65 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -12102,6 +12591,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 120.65 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 120.65 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12174,6 +12672,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12241,6 +12740,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12308,6 +12808,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12375,6 +12876,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12442,6 +12944,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12496,7 +12999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 69.85 31.75 90)
 			(effects
 				(font
@@ -12505,12 +13008,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 69.85 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -12524,6 +13028,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 69.85 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 69.85 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12583,7 +13096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 44.45 92.71 90)
 			(effects
 				(font
@@ -12592,12 +13105,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 44.45 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -12611,6 +13125,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 44.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 44.45 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12670,7 +13193,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 120.65 92.71 90)
 			(effects
 				(font
@@ -12679,12 +13202,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 120.65 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -12698,6 +13222,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 120.65 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 120.65 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12757,7 +13290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 184.15 72.39 90)
 			(effects
 				(font
@@ -12766,12 +13299,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 184.15 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -12785,6 +13319,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 184.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 184.15 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12857,6 +13400,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12924,6 +13468,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12978,7 +13523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 184.15 52.07 90)
 			(effects
 				(font
@@ -12987,12 +13532,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 184.15 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13006,6 +13552,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 184.15 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 184.15 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13065,7 +13620,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 107.95 72.39 90)
 			(effects
 				(font
@@ -13074,12 +13629,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 107.95 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13093,6 +13649,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 107.95 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 107.95 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13152,7 +13717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 146.05 52.07 90)
 			(effects
 				(font
@@ -13161,12 +13726,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 146.05 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13180,6 +13746,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 146.05 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 146.05 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13239,7 +13814,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 120.65 72.39 90)
 			(effects
 				(font
@@ -13248,12 +13823,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 120.65 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13267,6 +13843,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 120.65 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13326,7 +13911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 57.15 31.75 90)
 			(effects
 				(font
@@ -13335,12 +13920,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 57.15 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13354,6 +13940,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 57.15 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 57.15 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13426,6 +14021,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13493,6 +14089,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13547,7 +14144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 44.45 52.07 90)
 			(effects
 				(font
@@ -13556,12 +14153,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 44.45 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13575,6 +14173,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 44.45 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 44.45 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13647,6 +14254,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13714,6 +14322,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -13768,7 +14377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 82.55 31.75 90)
 			(effects
 				(font
@@ -13777,12 +14386,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 82.55 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13796,6 +14406,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 82.55 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 82.55 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13855,7 +14474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 57.15 92.71 90)
 			(effects
 				(font
@@ -13864,12 +14483,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 57.15 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -13883,6 +14503,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 57.15 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 57.15 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13955,6 +14584,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14009,7 +14639,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 69.85 72.39 90)
 			(effects
 				(font
@@ -14018,12 +14648,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 69.85 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14037,6 +14668,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 69.85 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 69.85 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14096,7 +14736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 133.35 92.71 90)
 			(effects
 				(font
@@ -14105,12 +14745,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 133.35 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14124,6 +14765,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 133.35 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14196,6 +14846,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14250,7 +14901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 82.55 92.71 90)
 			(effects
 				(font
@@ -14259,12 +14910,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 82.55 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14278,6 +14930,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 82.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 82.55 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14337,7 +14998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 133.35 52.07 90)
 			(effects
 				(font
@@ -14346,12 +15007,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 133.35 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14365,6 +15027,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 133.35 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 133.35 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14424,7 +15095,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 95.25 92.71 90)
 			(effects
 				(font
@@ -14433,12 +15104,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 95.25 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14452,6 +15124,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 95.25 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 95.25 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14511,7 +15192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809291616_LIZ-Elec-CD4148WSP_C109001.pdf"
 			(at 57.15 52.07 90)
 			(effects
 				(font
@@ -14520,12 +15201,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "75V 1.25V@100mA 4ns 150mA 0805 Switching Diodes ROHS"
 			(at 57.15 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
@@ -14539,6 +15221,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 57.15 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109001"
+			(at 57.15 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "d54c4c62-c3a2-4ca9-bc42-a590564f76fb")
 	(paper "A4")
+	(title_block
+		(title "Psyduck Viper")
+		(date "2025-06-16")
+		(rev "v0.1.0")
+		(comment 1 "A modern interpretation of a Duck Viper v1 PCB")
+	)
 	(lib_symbols
 		(symbol "Device:LED"
 			(pin_numbers
@@ -337,23 +343,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -378,7 +388,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -396,7 +406,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -405,9 +415,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -415,6 +425,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -2318,6 +2348,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 93.98) (xy 34.29 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4559019e-b975-4207-9918-dce11a3d6688")
+	)
+	(wire
+		(pts
 			(xy 240.03 130.81) (xy 240.03 132.08)
 		)
 		(stroke
@@ -3588,7 +3628,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 90.17) (xy 26.67 91.44)
+			(xy 26.67 90.17) (xy 26.67 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4747,7 +4787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 96.52 69.85 0)
 			(effects
 				(font
@@ -4756,7 +4796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 96.52 69.85 0)
 			(effects
 				(font
@@ -4767,6 +4807,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 96.52 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4830,7 +4879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 132.08 101.6 0)
 			(effects
 				(font
@@ -4839,7 +4888,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 132.08 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 132.08 101.6 0)
 			(effects
 				(font
@@ -4904,7 +4962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 93.98 101.6 0)
 			(effects
 				(font
@@ -4913,7 +4971,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 93.98 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 93.98 101.6 0)
 			(effects
 				(font
@@ -4980,7 +5047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 160.02 130.81 0)
 			(effects
 				(font
@@ -4989,7 +5056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 160.02 130.81 0)
 			(effects
 				(font
@@ -5000,6 +5067,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 160.02 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 160.02 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5065,7 +5141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 121.92 90.17 0)
 			(effects
 				(font
@@ -5074,7 +5150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 121.92 90.17 0)
 			(effects
 				(font
@@ -5085,6 +5161,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 121.92 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 121.92 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5186,6 +5271,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 39.37 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d1c9ae9-c4f9-4006-99ff-6e70146b9821")
+		(property "Reference" "#PWR02"
+			(at 39.37 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 39.37 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 39.37 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34d748ef-715b-4b80-abe9-5d608aa28dd6")
+		)
+		(instances
+			(project "viper"
+				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 121.92 110.49 0)
 		(unit 1)
@@ -5222,7 +5373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 121.92 110.49 0)
 			(effects
 				(font
@@ -5231,7 +5382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 121.92 110.49 0)
 			(effects
 				(font
@@ -5242,6 +5393,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 121.92 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 121.92 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5379,7 +5539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 223.52 90.17 0)
 			(effects
 				(font
@@ -5388,7 +5548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 223.52 90.17 0)
 			(effects
 				(font
@@ -5399,6 +5559,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 223.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 223.52 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5462,7 +5631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 93.98 60.96 0)
 			(effects
 				(font
@@ -5471,7 +5640,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 93.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 93.98 60.96 0)
 			(effects
 				(font
@@ -5509,7 +5687,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "10e1cf72-3d71-4be0-9e0e-5adcac4f797f")
 		(property "Reference" "LED6"
 			(at 131.7624 46.99 90)
@@ -5538,7 +5715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 134.62 49.53 0)
 			(effects
 				(font
@@ -5547,7 +5724,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 134.62 49.53 0)
 			(effects
 				(font
@@ -5558,6 +5735,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 134.62 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 134.62 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5623,7 +5809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 134.62 69.85 0)
 			(effects
 				(font
@@ -5632,7 +5818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 134.62 69.85 0)
 			(effects
 				(font
@@ -5643,6 +5829,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 134.62 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 134.62 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5708,7 +5903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 71.12 69.85 0)
 			(effects
 				(font
@@ -5717,7 +5912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 71.12 69.85 0)
 			(effects
 				(font
@@ -5728,6 +5923,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 71.12 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,7 +5995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 157.48 121.92 0)
 			(effects
 				(font
@@ -5800,7 +6004,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 157.48 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 157.48 121.92 0)
 			(effects
 				(font
@@ -5867,7 +6080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 210.82 110.49 0)
 			(effects
 				(font
@@ -5876,7 +6089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 210.82 110.49 0)
 			(effects
 				(font
@@ -5887,6 +6100,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 210.82 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 210.82 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5950,7 +6172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 119.38 40.64 0)
 			(effects
 				(font
@@ -5959,7 +6181,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 119.38 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 119.38 40.64 0)
 			(effects
 				(font
@@ -6026,7 +6257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 109.22 110.49 0)
 			(effects
 				(font
@@ -6035,7 +6266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 109.22 110.49 0)
 			(effects
 				(font
@@ -6046,6 +6277,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 109.22 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 109.22 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6109,7 +6349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 220.98 60.96 0)
 			(effects
 				(font
@@ -6118,7 +6358,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 220.98 60.96 0)
 			(effects
 				(font
@@ -6185,7 +6434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 223.52 110.49 0)
 			(effects
 				(font
@@ -6194,7 +6443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 223.52 110.49 0)
 			(effects
 				(font
@@ -6205,6 +6454,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 223.52 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 223.52 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +6526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 93.98 81.28 0)
 			(effects
 				(font
@@ -6277,7 +6535,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 93.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 93.98 81.28 0)
 			(effects
 				(font
@@ -6308,34 +6575,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 85.09 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 39.37 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "25bd849f-d203-4317-b21f-fce078c6a87e")
-		(property "Reference" "MX1337"
-			(at 43.18 83.9216 0)
+		(property "Reference" "LED30_2"
+			(at 43.434 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "MXLockLed"
-			(at 43.18 86.233 0)
+		(property "Value" "LockLED"
+			(at 43.434 82.7786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "locallib:MX-Lock-LED-PolarityMarked"
-			(at 40.64 85.09 0)
+			(at 39.37 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6343,8 +6610,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 40.64 85.09 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
+			(at 39.37 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6352,27 +6619,49 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 40.64 85.09 0)
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
+			(at 39.37 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Pin" ""
-			(at 40.64 85.09 0)
+			(at 39.37 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 39.37 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 39.37 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c14b0f7c-a3fa-40b1-a6ee-19f1aa7663a7")
 		)
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
-					(reference "MX1337")
+					(reference "LED30_2")
 					(unit 1)
 				)
 			)
@@ -6413,7 +6702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 182.88 121.92 0)
 			(effects
 				(font
@@ -6422,7 +6711,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 182.88 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 182.88 121.92 0)
 			(effects
 				(font
@@ -6487,7 +6785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 144.78 40.64 0)
 			(effects
 				(font
@@ -6496,7 +6794,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 144.78 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 144.78 40.64 0)
 			(effects
 				(font
@@ -6563,7 +6870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 236.22 69.85 0)
 			(effects
 				(font
@@ -6572,7 +6879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 236.22 69.85 0)
 			(effects
 				(font
@@ -6583,6 +6890,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 236.22 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 236.22 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6648,7 +6964,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 172.72 69.85 0)
 			(effects
 				(font
@@ -6657,7 +6973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 172.72 69.85 0)
 			(effects
 				(font
@@ -6668,6 +6984,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 172.72 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 172.72 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6704,7 +7029,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "310aca39-af03-4a9c-a3ff-2d3e741816ea")
 		(property "Reference" "LED12"
 			(at 207.9624 46.99 90)
@@ -6733,7 +7057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 210.82 49.53 0)
 			(effects
 				(font
@@ -6742,7 +7066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 210.82 49.53 0)
 			(effects
 				(font
@@ -6753,6 +7077,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 210.82 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6816,7 +7149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 106.68 60.96 0)
 			(effects
 				(font
@@ -6825,7 +7158,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 106.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 106.68 60.96 0)
 			(effects
 				(font
@@ -6892,7 +7234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 198.12 69.85 0)
 			(effects
 				(font
@@ -6901,7 +7243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 198.12 69.85 0)
 			(effects
 				(font
@@ -6912,6 +7254,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 198.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 198.12 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6975,7 +7326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 170.18 101.6 0)
 			(effects
 				(font
@@ -6984,7 +7335,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 170.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 170.18 101.6 0)
 			(effects
 				(font
@@ -7049,7 +7409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 195.58 60.96 0)
 			(effects
 				(font
@@ -7058,7 +7418,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 195.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 195.58 60.96 0)
 			(effects
 				(font
@@ -7096,7 +7465,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3c71cd77-4ce4-43e4-8dd2-91a190bdc949")
 		(property "Reference" "LED2"
 			(at 80.9624 46.99 90)
@@ -7125,7 +7493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 83.82 49.53 0)
 			(effects
 				(font
@@ -7134,7 +7502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 83.82 49.53 0)
 			(effects
 				(font
@@ -7145,6 +7513,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 83.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 83.82 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +7585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 157.48 40.64 0)
 			(effects
 				(font
@@ -7217,7 +7594,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 157.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 157.48 40.64 0)
 			(effects
 				(font
@@ -7284,7 +7670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 83.82 110.49 0)
 			(effects
 				(font
@@ -7293,7 +7679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 83.82 110.49 0)
 			(effects
 				(font
@@ -7304,6 +7690,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 83.82 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 83.82 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7334,7 +7729,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 30.48 91.44 0)
+		(at 30.48 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7342,7 +7737,7 @@
 		(dnp no)
 		(uuid "45fa00de-1bfa-453e-89b4-f50fec21c41e")
 		(property "Reference" "LED30_1"
-			(at 30.48 101.346 90)
+			(at 35.052 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7351,7 +7746,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 33.02 101.346 90)
+			(at 35.052 95.758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7360,7 +7755,7 @@
 			)
 		)
 		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
-			(at 30.48 91.44 0)
+			(at 30.48 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7368,8 +7763,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 30.48 91.44 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
+			(at 30.48 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7377,8 +7772,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 30.48 91.44 0)
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
+			(at 30.48 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7387,7 +7782,16 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 30.48 91.44 0)
+			(at 30.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 30.48 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7451,7 +7855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 81.28 40.64 0)
 			(effects
 				(font
@@ -7460,7 +7864,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 81.28 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 81.28 40.64 0)
 			(effects
 				(font
@@ -7527,7 +7940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 160.02 69.85 0)
 			(effects
 				(font
@@ -7536,7 +7949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 160.02 69.85 0)
 			(effects
 				(font
@@ -7547,6 +7960,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 160.02 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7612,7 +8034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 96.52 90.17 0)
 			(effects
 				(font
@@ -7621,7 +8043,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 96.52 90.17 0)
 			(effects
 				(font
@@ -7632,6 +8054,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 96.52 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7695,7 +8126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 208.28 60.96 0)
 			(effects
 				(font
@@ -7704,7 +8135,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 208.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 208.28 60.96 0)
 			(effects
 				(font
@@ -7769,7 +8209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 144.78 81.28 0)
 			(effects
 				(font
@@ -7778,7 +8218,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 144.78 81.28 0)
 			(effects
 				(font
@@ -7843,7 +8292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 170.18 40.64 0)
 			(effects
 				(font
@@ -7852,7 +8301,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 170.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 170.18 40.64 0)
 			(effects
 				(font
@@ -7919,7 +8377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 160.02 90.17 0)
 			(effects
 				(font
@@ -7928,7 +8386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 160.02 90.17 0)
 			(effects
 				(font
@@ -7939,6 +8397,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 160.02 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 160.02 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8002,7 +8469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 208.28 40.64 0)
 			(effects
 				(font
@@ -8011,7 +8478,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 208.28 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 208.28 40.64 0)
 			(effects
 				(font
@@ -8076,7 +8552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 132.08 40.64 0)
 			(effects
 				(font
@@ -8085,7 +8561,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 132.08 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 132.08 40.64 0)
 			(effects
 				(font
@@ -8150,7 +8635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 220.98 81.28 0)
 			(effects
 				(font
@@ -8159,7 +8644,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 220.98 81.28 0)
 			(effects
 				(font
@@ -8224,7 +8718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 119.38 81.28 0)
 			(effects
 				(font
@@ -8233,7 +8727,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 119.38 81.28 0)
 			(effects
 				(font
@@ -8271,7 +8774,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5a825e1d-69db-4668-b245-4d287143205e")
 		(property "Reference" "LED13"
 			(at 220.6624 46.99 90)
@@ -8300,7 +8802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 223.52 49.53 0)
 			(effects
 				(font
@@ -8309,7 +8811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 223.52 49.53 0)
 			(effects
 				(font
@@ -8320,6 +8822,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 223.52 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 223.52 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8385,7 +8896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 223.52 69.85 0)
 			(effects
 				(font
@@ -8394,7 +8905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 223.52 69.85 0)
 			(effects
 				(font
@@ -8405,6 +8916,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 223.52 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,7 +8988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 144.78 101.6 0)
 			(effects
 				(font
@@ -8477,7 +8997,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 144.78 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 144.78 101.6 0)
 			(effects
 				(font
@@ -8542,7 +9071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 195.58 81.28 0)
 			(effects
 				(font
@@ -8551,7 +9080,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 195.58 81.28 0)
 			(effects
 				(font
@@ -8616,7 +9154,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 132.08 121.92 0)
 			(effects
 				(font
@@ -8625,7 +9163,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 132.08 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 132.08 121.92 0)
 			(effects
 				(font
@@ -8690,7 +9237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 93.98 40.64 0)
 			(effects
 				(font
@@ -8699,7 +9246,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 93.98 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 93.98 40.64 0)
 			(effects
 				(font
@@ -8764,7 +9320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 182.88 81.28 0)
 			(effects
 				(font
@@ -8773,7 +9329,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 182.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 182.88 81.28 0)
 			(effects
 				(font
@@ -8840,7 +9405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 109.22 69.85 0)
 			(effects
 				(font
@@ -8849,7 +9414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 109.22 69.85 0)
 			(effects
 				(font
@@ -8860,6 +9425,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 109.22 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 109.22 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8925,7 +9499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 236.22 130.81 0)
 			(effects
 				(font
@@ -8934,7 +9508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 236.22 130.81 0)
 			(effects
 				(font
@@ -8945,6 +9519,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 236.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 236.22 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9010,7 +9593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 198.12 90.17 0)
 			(effects
 				(font
@@ -9019,7 +9602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 198.12 90.17 0)
 			(effects
 				(font
@@ -9030,6 +9613,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 198.12 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 198.12 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9095,7 +9687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 134.62 110.49 0)
 			(effects
 				(font
@@ -9104,7 +9696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 134.62 110.49 0)
 			(effects
 				(font
@@ -9115,6 +9707,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 134.62 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 134.62 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9179,7 +9780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 224.79 109.22 0)
 			(effects
 				(font
@@ -9188,7 +9789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 224.79 109.22 0)
 			(effects
 				(font
@@ -9199,6 +9800,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 224.79 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 224.79 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9262,7 +9872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 157.48 101.6 0)
 			(effects
 				(font
@@ -9271,7 +9881,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 157.48 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 157.48 101.6 0)
 			(effects
 				(font
@@ -9336,7 +9955,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 106.68 81.28 0)
 			(effects
 				(font
@@ -9345,7 +9964,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 106.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 106.68 81.28 0)
 			(effects
 				(font
@@ -9410,7 +10038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -9419,7 +10047,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 132.08 60.96 0)
 			(effects
 				(font
@@ -9457,7 +10094,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7e027da2-f794-44c3-b771-5da0af40277f")
 		(property "Reference" "LED5"
 			(at 119.0624 46.99 90)
@@ -9486,7 +10122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 121.92 49.53 0)
 			(effects
 				(font
@@ -9495,7 +10131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 121.92 49.53 0)
 			(effects
 				(font
@@ -9506,6 +10142,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 121.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 121.92 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9571,7 +10216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 185.42 130.81 0)
 			(effects
 				(font
@@ -9580,7 +10225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 185.42 130.81 0)
 			(effects
 				(font
@@ -9591,6 +10236,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 185.42 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 185.42 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9654,7 +10308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 119.38 60.96 0)
 			(effects
 				(font
@@ -9663,7 +10317,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 119.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 119.38 60.96 0)
 			(effects
 				(font
@@ -9728,7 +10391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 220.98 101.6 0)
 			(effects
 				(font
@@ -9737,7 +10400,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 220.98 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 220.98 101.6 0)
 			(effects
 				(font
@@ -9804,7 +10476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 121.92 69.85 0)
 			(effects
 				(font
@@ -9813,7 +10485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 121.92 69.85 0)
 			(effects
 				(font
@@ -9824,6 +10496,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 121.92 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 121.92 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9889,7 +10570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 172.72 90.17 0)
 			(effects
 				(font
@@ -9898,7 +10579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 172.72 90.17 0)
 			(effects
 				(font
@@ -9909,6 +10590,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 172.72 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 172.72 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9972,7 +10662,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 106.68 121.92 0)
 			(effects
 				(font
@@ -9981,7 +10671,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 106.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 106.68 121.92 0)
 			(effects
 				(font
@@ -10048,7 +10747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 96.52 110.49 0)
 			(effects
 				(font
@@ -10057,7 +10756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 96.52 110.49 0)
 			(effects
 				(font
@@ -10068,6 +10767,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 96.52 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10131,7 +10839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 170.18 60.96 0)
 			(effects
 				(font
@@ -10140,7 +10848,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 170.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 170.18 60.96 0)
 			(effects
 				(font
@@ -10207,7 +10924,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 109.22 130.81 0)
 			(effects
 				(font
@@ -10216,7 +10933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 109.22 130.81 0)
 			(effects
 				(font
@@ -10227,6 +10944,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 109.22 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 109.22 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10263,7 +10989,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "95d23694-285b-461e-82ff-89e31543cc13")
 		(property "Reference" "LED11"
 			(at 195.2624 46.99 90)
@@ -10292,7 +11017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 198.12 49.53 0)
 			(effects
 				(font
@@ -10301,7 +11026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 198.12 49.53 0)
 			(effects
 				(font
@@ -10312,6 +11037,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 198.12 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 198.12 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10377,7 +11111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 210.82 130.81 0)
 			(effects
 				(font
@@ -10386,7 +11120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 210.82 130.81 0)
 			(effects
 				(font
@@ -10397,6 +11131,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 210.82 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10462,7 +11205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 147.32 110.49 0)
 			(effects
 				(font
@@ -10471,7 +11214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 147.32 110.49 0)
 			(effects
 				(font
@@ -10482,6 +11225,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 147.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 147.32 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10545,7 +11297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 170.18 81.28 0)
 			(effects
 				(font
@@ -10554,7 +11306,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 170.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 170.18 81.28 0)
 			(effects
 				(font
@@ -10619,7 +11380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 208.28 81.28 0)
 			(effects
 				(font
@@ -10628,7 +11389,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 208.28 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 208.28 81.28 0)
 			(effects
 				(font
@@ -10693,7 +11463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 132.08 81.28 0)
 			(effects
 				(font
@@ -10702,7 +11472,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 132.08 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 132.08 81.28 0)
 			(effects
 				(font
@@ -10767,7 +11546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 27.94 81.28 0)
 			(effects
 				(font
@@ -10776,7 +11555,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 27.94 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 27.94 81.28 0)
 			(effects
 				(font
@@ -10841,7 +11629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 119.38 101.6 0)
 			(effects
 				(font
@@ -10850,7 +11638,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 119.38 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 119.38 101.6 0)
 			(effects
 				(font
@@ -10888,7 +11685,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a6327253-d7eb-401d-a1d4-773bd3946a7c")
 		(property "Reference" "LED4"
 			(at 106.3624 46.99 90)
@@ -10917,7 +11713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 109.22 49.53 0)
 			(effects
 				(font
@@ -10926,7 +11722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 109.22 49.53 0)
 			(effects
 				(font
@@ -10937,6 +11733,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 109.22 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 109.22 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11000,7 +11805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 182.88 101.6 0)
 			(effects
 				(font
@@ -11009,7 +11814,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 182.88 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 182.88 101.6 0)
 			(effects
 				(font
@@ -11047,7 +11861,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ae7a2a08-c082-4fef-95a1-c8f765b132a4")
 		(property "Reference" "LED15"
 			(at 246.0624 46.99 90)
@@ -11076,7 +11889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -11085,7 +11898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -11096,6 +11909,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 248.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 248.92 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11159,7 +11981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 93.98 121.92 0)
 			(effects
 				(font
@@ -11168,7 +11990,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 93.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 93.98 121.92 0)
 			(effects
 				(font
@@ -11233,7 +12064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 208.28 121.92 0)
 			(effects
 				(font
@@ -11242,7 +12073,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 208.28 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 208.28 121.92 0)
 			(effects
 				(font
@@ -11307,7 +12147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 233.68 40.64 0)
 			(effects
 				(font
@@ -11316,7 +12156,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 233.68 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 233.68 40.64 0)
 			(effects
 				(font
@@ -11383,7 +12232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 185.42 69.85 0)
 			(effects
 				(font
@@ -11392,7 +12241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 185.42 69.85 0)
 			(effects
 				(font
@@ -11403,6 +12252,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 185.42 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 185.42 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11439,7 +12297,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b97c2c84-57ca-478b-9562-01ccc6e58d45")
 		(property "Reference" "LED1"
 			(at 68.2624 46.99 90)
@@ -11468,7 +12325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 71.12 49.53 0)
 			(effects
 				(font
@@ -11477,7 +12334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 71.12 49.53 0)
 			(effects
 				(font
@@ -11488,6 +12345,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 71.12 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 71.12 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11551,7 +12417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 106.68 40.64 0)
 			(effects
 				(font
@@ -11560,7 +12426,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 106.68 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 106.68 40.64 0)
 			(effects
 				(font
@@ -11627,7 +12502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 147.32 90.17 0)
 			(effects
 				(font
@@ -11636,7 +12511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 147.32 90.17 0)
 			(effects
 				(font
@@ -11647,6 +12522,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 147.32 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 147.32 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11712,7 +12596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 172.72 110.49 0)
 			(effects
 				(font
@@ -11721,7 +12605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 172.72 110.49 0)
 			(effects
 				(font
@@ -11732,6 +12616,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 172.72 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 172.72 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11795,7 +12688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 157.48 81.28 0)
 			(effects
 				(font
@@ -11804,7 +12697,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 157.48 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 157.48 81.28 0)
 			(effects
 				(font
@@ -11869,7 +12771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 233.68 121.92 0)
 			(effects
 				(font
@@ -11878,7 +12780,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 233.68 121.92 0)
 			(effects
 				(font
@@ -11945,7 +12856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 83.82 69.85 0)
 			(effects
 				(font
@@ -11954,7 +12865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 83.82 69.85 0)
 			(effects
 				(font
@@ -11965,6 +12876,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 83.82 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 83.82 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12001,7 +12921,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bf87fb3f-af71-401b-b630-640891b855d6")
 		(property "Reference" "LED3"
 			(at 93.6624 46.99 90)
@@ -12030,7 +12949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 96.52 49.53 0)
 			(effects
 				(font
@@ -12039,7 +12958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 96.52 49.53 0)
 			(effects
 				(font
@@ -12050,6 +12969,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 96.52 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12086,7 +13014,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c63fcc6f-7dd2-4f87-a2bb-b3c85e9fc234")
 		(property "Reference" "LED8"
 			(at 157.1624 46.99 90)
@@ -12115,7 +13042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 160.02 49.53 0)
 			(effects
 				(font
@@ -12124,7 +13051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 160.02 49.53 0)
 			(effects
 				(font
@@ -12135,6 +13062,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 160.02 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 160.02 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12200,7 +13136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 96.52 130.81 0)
 			(effects
 				(font
@@ -12209,7 +13145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 96.52 130.81 0)
 			(effects
 				(font
@@ -12220,6 +13156,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 96.52 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12283,7 +13228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 182.88 40.64 0)
 			(effects
 				(font
@@ -12292,7 +13237,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 182.88 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 182.88 40.64 0)
 			(effects
 				(font
@@ -12357,7 +13311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 208.28 101.6 0)
 			(effects
 				(font
@@ -12366,7 +13320,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 208.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 208.28 101.6 0)
 			(effects
 				(font
@@ -12433,7 +13396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 160.02 110.49 0)
 			(effects
 				(font
@@ -12442,7 +13405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 160.02 110.49 0)
 			(effects
 				(font
@@ -12453,6 +13416,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 160.02 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 160.02 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12516,7 +13488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 68.58 40.64 0)
 			(effects
 				(font
@@ -12525,7 +13497,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 68.58 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 68.58 40.64 0)
 			(effects
 				(font
@@ -12563,24 +13544,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d12eca6b-4929-4c84-b87c-d92cbf575a1b")
 		(property "Reference" "LED30"
-			(at 27.6224 87.63 90)
+			(at 25.146 89.154 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "LED"
-			(at 30.1624 87.63 90)
+			(at 25.146 91.186 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
@@ -12592,7 +13572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 30.48 90.17 0)
 			(effects
 				(font
@@ -12601,7 +13581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 30.48 90.17 0)
 			(effects
 				(font
@@ -12611,6 +13591,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
 			(at 30.48 90.17 0)
 			(effects
 				(font
@@ -12675,7 +13664,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 106.68 101.6 0)
 			(effects
 				(font
@@ -12684,7 +13673,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 106.68 101.6 0)
 			(effects
 				(font
@@ -12751,7 +13749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 185.42 90.17 0)
 			(effects
 				(font
@@ -12760,7 +13758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 185.42 90.17 0)
 			(effects
 				(font
@@ -12771,6 +13769,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 185.42 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 185.42 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12836,7 +13843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 83.82 90.17 0)
 			(effects
 				(font
@@ -12845,7 +13852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 83.82 90.17 0)
 			(effects
 				(font
@@ -12856,6 +13863,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 83.82 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 83.82 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12919,7 +13935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 144.78 60.96 0)
 			(effects
 				(font
@@ -12928,7 +13944,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 144.78 60.96 0)
 			(effects
 				(font
@@ -12993,7 +14018,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 81.28 81.28 0)
 			(effects
 				(font
@@ -13002,7 +14027,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 81.28 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 81.28 81.28 0)
 			(effects
 				(font
@@ -13069,7 +14103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 109.22 90.17 0)
 			(effects
 				(font
@@ -13078,7 +14112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 109.22 90.17 0)
 			(effects
 				(font
@@ -13089,6 +14123,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 109.22 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 109.22 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13154,7 +14197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 134.62 90.17 0)
 			(effects
 				(font
@@ -13163,7 +14206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 134.62 90.17 0)
 			(effects
 				(font
@@ -13174,6 +14217,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 134.62 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 134.62 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13239,7 +14291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 210.82 69.85 0)
 			(effects
 				(font
@@ -13248,7 +14300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 210.82 69.85 0)
 			(effects
 				(font
@@ -13259,6 +14311,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 210.82 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 210.82 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13322,7 +14383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 81.28 60.96 0)
 			(effects
 				(font
@@ -13331,7 +14392,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 81.28 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 81.28 60.96 0)
 			(effects
 				(font
@@ -13369,7 +14439,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e3b40295-aa78-4829-b809-f5f26819fe54")
 		(property "Reference" "LED10"
 			(at 182.5624 46.99 90)
@@ -13398,7 +14467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 185.42 49.53 0)
 			(effects
 				(font
@@ -13407,7 +14476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 185.42 49.53 0)
 			(effects
 				(font
@@ -13418,6 +14487,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 185.42 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13482,7 +14560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 237.49 48.26 0)
 			(effects
 				(font
@@ -13491,7 +14569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 237.49 48.26 0)
 			(effects
 				(font
@@ -13502,6 +14580,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 237.49 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 237.49 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13565,7 +14652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 246.38 40.64 0)
 			(effects
 				(font
@@ -13574,7 +14661,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 246.38 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 246.38 40.64 0)
 			(effects
 				(font
@@ -13639,7 +14735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 68.58 60.96 0)
 			(effects
 				(font
@@ -13648,7 +14744,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 68.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 68.58 60.96 0)
 			(effects
 				(font
@@ -13714,7 +14819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 236.22 49.53 0)
 			(effects
 				(font
@@ -13723,7 +14828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 236.22 49.53 0)
 			(effects
 				(font
@@ -13734,6 +14839,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 236.22 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 236.22 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13797,7 +14911,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -13806,7 +14920,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 195.58 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -13871,7 +14994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 195.58 101.6 0)
 			(effects
 				(font
@@ -13880,7 +15003,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 195.58 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 195.58 101.6 0)
 			(effects
 				(font
@@ -13918,7 +15050,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ef666c79-4eff-4f58-8477-9bc62d2f8fb9")
 		(property "Reference" "LED9"
 			(at 169.8624 46.99 90)
@@ -13947,7 +15078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 172.72 49.53 0)
 			(effects
 				(font
@@ -13956,7 +15087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 172.72 49.53 0)
 			(effects
 				(font
@@ -13967,6 +15098,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 172.72 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 172.72 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14030,7 +15170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 157.48 60.96 0)
 			(effects
 				(font
@@ -14039,7 +15179,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 157.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 157.48 60.96 0)
 			(effects
 				(font
@@ -14106,7 +15255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 210.82 90.17 0)
 			(effects
 				(font
@@ -14115,7 +15264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 210.82 90.17 0)
 			(effects
 				(font
@@ -14126,6 +15275,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 210.82 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 210.82 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14189,7 +15347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 81.28 101.6 0)
 			(effects
 				(font
@@ -14198,7 +15356,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 81.28 101.6 0)
 			(effects
 				(font
@@ -14263,7 +15430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 182.88 60.96 0)
 			(effects
 				(font
@@ -14272,7 +15439,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 182.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 182.88 60.96 0)
 			(effects
 				(font
@@ -14337,7 +15513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 220.98 40.64 0)
 			(effects
 				(font
@@ -14346,7 +15522,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 220.98 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 220.98 40.64 0)
 			(effects
 				(font
@@ -14411,7 +15596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 233.68 60.96 0)
 			(effects
 				(font
@@ -14420,7 +15605,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 233.68 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 233.68 60.96 0)
 			(effects
 				(font
@@ -14485,7 +15679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
 			(at 233.68 101.6 0)
 			(effects
 				(font
@@ -14494,7 +15688,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, rotated by 45°"
+		(property "Description" "125mW Thick Film Resistor 150V ±100ppm/℃ ±1% 470Ω 0805 Chip Resistor - Surface Mount ROHS"
+			(at 233.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
 			(at 233.68 101.6 0)
 			(effects
 				(font
@@ -14561,7 +15764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 134.62 130.81 0)
 			(effects
 				(font
@@ -14570,7 +15773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 134.62 130.81 0)
 			(effects
 				(font
@@ -14581,6 +15784,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 134.62 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 134.62 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14617,7 +15829,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fa650034-8322-40e1-be4a-8941735b7d45")
 		(property "Reference" "LED7"
 			(at 144.4624 46.99 90)
@@ -14646,7 +15857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 147.32 49.53 0)
 			(effects
 				(font
@@ -14655,7 +15866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 147.32 49.53 0)
 			(effects
 				(font
@@ -14666,6 +15877,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 147.32 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14731,7 +15951,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 198.12 110.49 0)
 			(effects
 				(font
@@ -14740,7 +15960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 198.12 110.49 0)
 			(effects
 				(font
@@ -14751,6 +15971,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 198.12 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 198.12 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14816,7 +16045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 236.22 110.49 0)
 			(effects
 				(font
@@ -14825,7 +16054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 236.22 110.49 0)
 			(effects
 				(font
@@ -14836,6 +16065,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 236.22 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 236.22 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14901,7 +16139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 185.42 110.49 0)
 			(effects
 				(font
@@ -14910,7 +16148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 185.42 110.49 0)
 			(effects
 				(font
@@ -14921,6 +16159,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 185.42 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 185.42 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14986,7 +16233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121451_XINGLIGHT-XL-234SURD-L_C5440555.pdf"
 			(at 147.32 69.85 0)
 			(effects
 				(font
@@ -14995,7 +16242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "20mA 800mcd Red Lens 625nm~630nm -25℃~+85℃ Red 80° 2×3×4mm Square Lens 2V~2.4V Plugin,L=3.15mm LED Indication - Discrete ROHS"
 			(at 147.32 69.85 0)
 			(effects
 				(font
@@ -15006,6 +16253,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 147.32 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5440555"
+			(at 147.32 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
