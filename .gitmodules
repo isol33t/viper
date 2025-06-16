@@ -7,3 +7,6 @@
 [submodule "hardware/viper/kiswitch"]
 	path = hardware/viper/kiswitch
 	url = https://github.com/kiswitch/kiswitch.git
+[submodule "hardware/viper/KiCad-CustomDesignRules"]
+	path = hardware/viper/KiCad-CustomDesignRules
+	url = https://github.com/Cimos/KiCad-CustomDesignRules.git
