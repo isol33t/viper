@@ -38,13 +38,7 @@ An open-source PCB design for the Duck Viper v1 keyboard with hardware upgrades.
   <img src="docs/images/viper.svg" alt="Duck Viper v1 IC schematic WIP" width="75%">
 </p>
 
-<p align="left">
-  <img src="docs/images/viper-Switch-Matrix.svg" alt="Duck Viper v1 Switch schematic WIP" width="75%">
-</p>
-
-<p align="left">
-  <img src="docs/images/viper-LED-Matrix.svg" alt="Duck Viper v1 LED schematic WIP" width="75%">
-</p>
+[Link to PDF](hardware/schematic.pdf)
 
 
 ### Design Questions (Help Needed!)
