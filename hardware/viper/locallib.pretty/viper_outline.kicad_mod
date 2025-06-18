@@ -4,10 +4,10 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -139 50.5 0)
-		(layer "Edge.Cuts")
+		(at -135.625 22 0)
+		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d9ba9f28-e608-4b1c-8057-d533a9715ea9")
+		(uuid "5130213e-552d-45e9-82ab-7fb2c28328d5")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +16,9 @@
 		)
 	)
 	(property "Value" "viper_outline"
-		(at -139 49 0)
+		(at -135.625 25 0)
 		(layer "F.Fab")
-		(hide yes)
-		(uuid "16ef2a5b-2b23-45c4-85ca-6ba9d0135b0c")
+		(uuid "ec4d9434-9b25-48e5-b488-74b3c3bf70f0")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +30,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9e8fda15-042e-4812-b90f-2997002d8abf")
+		(uuid "8e71acdf-dbdb-4220-9094-b222d1df9247")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "958378be-8649-4f01-b147-46b6eb6993fb")
+		(uuid "b4f81df5-5f97-4c27-b8f5-2f4d893c27e8")
 		(effects
 			(font
 				(size 1.27 1.27)

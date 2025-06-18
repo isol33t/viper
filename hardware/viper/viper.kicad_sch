@@ -2362,174 +2362,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:D_Zener_Small"
 			(pin_names
 				(offset 0.254)
@@ -7250,7 +7082,7 @@
 		(uuid "00bc6529-2c50-4b36-beea-84eed5af7151")
 	)
 	(junction
-		(at 109.22 241.3)
+		(at 106.68 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03869006-02b0-4b71-a270-e7d09f93a68f")
@@ -7304,7 +7136,7 @@
 		(uuid "43641ea7-0001-46c8-924a-926084c8133b")
 	)
 	(junction
-		(at 113.03 247.65)
+		(at 110.49 247.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "45115717-2b97-4f5b-8143-6882406cea98")
@@ -7777,7 +7609,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 241.3) (xy 109.22 241.3)
+			(xy 101.6 241.3) (xy 106.68 241.3)
 		)
 		(stroke
 			(width 0)
@@ -8147,7 +7979,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 247.65) (xy 113.03 248.92)
+			(xy 110.49 247.65) (xy 110.49 248.92)
 		)
 		(stroke
 			(width 0)
@@ -8317,7 +8149,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 246.38) (xy 113.03 247.65)
+			(xy 110.49 246.38) (xy 110.49 247.65)
 		)
 		(stroke
 			(width 0)
@@ -8827,7 +8659,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 241.3) (xy 113.03 241.3)
+			(xy 106.68 241.3) (xy 110.49 241.3)
 		)
 		(stroke
 			(width 0)
@@ -9027,7 +8859,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 241.3) (xy 109.22 242.57)
+			(xy 106.68 241.3) (xy 106.68 242.57)
 		)
 		(stroke
 			(width 0)
@@ -9237,7 +9069,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 247.65) (xy 113.03 247.65)
+			(xy 106.68 247.65) (xy 110.49 247.65)
 		)
 		(stroke
 			(width 0)
@@ -10006,84 +9838,6 @@
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
 					(reference "LF1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 100.33 241.3 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005d48318c")
-		(property "Reference" "DSH1"
-			(at 101.1174 243.3066 90)
-			(effects
-				(font
-					(size 0.7874 0.7874)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4007"
-			(at 99.5426 243.3066 90)
-			(effects
-				(font
-					(size 0.7874 0.7874)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 100.33 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061757_FUXINSEMI-1N4007W_C3018540.pdf"
-			(at 100.33 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A 1.1V@1A 1kV SOD-123 Diodes - General Purpose ROHS"
-			(at 100.33 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C3018540"
-			(at 100.33 241.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "910c7217-fa73-46ff-8606-186920445386")
-		)
-		(pin "2"
-			(uuid "ac2db09e-c1dc-45db-ae94-67c67572d666")
-		)
-		(instances
-			(project "viper"
-				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "DSH1")
 					(unit 1)
 				)
 			)
@@ -11186,7 +10940,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d1ef980-c7b2-4c09-bc35-b2ec9ff3649d")
-		(property "Reference" "C3"
+		(property "Reference" "CB1"
 			(at 176.53 71.882 90)
 			(effects
 				(font
@@ -11256,7 +11010,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C3")
+					(reference "CB1")
 					(unit 1)
 				)
 			)
@@ -11344,7 +11098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fb85878-4794-4264-b20c-fb3176b6803b")
-		(property "Reference" "R63"
+		(property "Reference" "RRST1"
 			(at 102.87 149.606 90)
 			(effects
 				(font
@@ -11414,7 +11168,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "R63")
+					(reference "RRST1")
 					(unit 1)
 				)
 			)
@@ -12518,7 +12272,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 109.22 245.11 180)
+		(at 106.68 245.11 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12526,7 +12280,7 @@
 		(dnp no)
 		(uuid "3d50c454-d0b6-4c79-9be6-74595820c4c9")
 		(property "Reference" "CSH2"
-			(at 105.41 245.11 90)
+			(at 102.87 245.11 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12534,7 +12288,7 @@
 			)
 		)
 		(property "Value" "4.7nF"
-			(at 106.68 245.11 90)
+			(at 104.14 245.11 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12542,7 +12296,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 109.22 245.11 0)
+			(at 106.68 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12551,7 +12305,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410010301_Murata-Electronics-GRM2165C1H472JA01D_C77063.pdf"
-			(at 109.22 245.11 0)
+			(at 106.68 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12560,7 +12314,7 @@
 			)
 		)
 		(property "Description" "50V 4.7nF C0G ±5% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 109.22 245.11 0)
+			(at 106.68 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12569,7 +12323,7 @@
 			)
 		)
 		(property "LCSC" "C77063"
-			(at 109.22 245.11 90)
+			(at 106.68 245.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12668,7 +12422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ee18fb9-1624-4bc4-99dc-dfff917916a7")
-		(property "Reference" "C5"
+		(property "Reference" "CB3"
 			(at 184.15 82.042 90)
 			(effects
 				(font
@@ -12738,7 +12492,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C5")
+					(reference "CB3")
 					(unit 1)
 				)
 			)
@@ -12994,7 +12748,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+		(property "Footprint" "locallib:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 45.72 130.81 0)
 			(effects
 				(font
@@ -13175,7 +12929,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ed054d9-a6cf-4f06-aea6-9d4d4164a006")
-		(property "Reference" "R66"
+		(property "Reference" "RD2"
 			(at 153.67 130.556 90)
 			(effects
 				(font
@@ -13245,7 +12999,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "R66")
+					(reference "RD2")
 					(unit 1)
 				)
 			)
@@ -13327,7 +13081,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5500145e-c1d3-4566-a96b-3aae30a92ed7")
-		(property "Reference" "C6"
+		(property "Reference" "CB4"
 			(at 173.99 85.598 90)
 			(effects
 				(font
@@ -13397,7 +13151,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C6")
+					(reference "CB4")
 					(unit 1)
 				)
 			)
@@ -13628,7 +13382,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6e5f7670-b389-4984-bc7a-66498c447d8a")
 		(property "Reference" "ST59"
 			(at 299.72 172.212 0)
@@ -13825,6 +13579,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 99.06 241.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ce087ba-ef35-454a-b902-e5bed0b8bbdd")
+		(property "Reference" "DSH1"
+			(at 98.298 242.824 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMF9.0CA"
+			(at 99.822 242.824 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 99.06 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2504101957_hongjiacheng-SMF9-0CA_C19077504.pdf"
+			(at 99.06 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "13A@10/1000us 15.4V 200W@10/1000us 11.1V Bidirectional 9V SOD-123FL ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 99.06 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TODO" "${ERC_ERROR TODO} Possibly SMF5.0CA?"
+			(at 99.06 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" ""
+			(at 99.06 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19077504"
+			(at 99.06 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97f1ebcc-6712-4fa6-b27d-1ea5189d84fa")
+		)
+		(pin "2"
+			(uuid "d4af306c-434c-4e6c-a2eb-b1105e25717e")
+		)
+		(instances
+			(project "viper"
+				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
+					(reference "DSH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_5")
 		(lib_id "power:GND")
 		(at 332.74 92.71 0)
@@ -13998,7 +13848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2504101957_XINGLIGHT-XL-2020RGBC-WS2812B_C5349955.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412051755_Worldsemi-WS2812B-MINI-V3-W_C527089.pdf"
 			(at 330.2 113.665 0)
 			(effects
 				(font
@@ -14008,7 +13858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2020 RGB LEDs(Built-in IC) ROHS"
+		(property "Description" "SMD3535 RGB LEDs(Built-in IC) ROHS"
 			(at 327.66 104.14 0)
 			(effects
 				(font
@@ -14026,7 +13876,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5349955"
+		(property "LCSC" "C527089"
 			(at 327.66 104.14 0)
 			(effects
 				(font
@@ -14347,7 +14197,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 113.03 243.84 0)
+		(at 110.49 243.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14355,7 +14205,7 @@
 		(dnp no)
 		(uuid "97d6e5e2-a90d-4cfd-86c5-217391ed58b8")
 		(property "Reference" "RSH2"
-			(at 115.062 243.0272 0)
+			(at 112.522 243.0272 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -14364,7 +14214,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 115.062 244.602 0)
+			(at 112.522 244.602 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -14373,7 +14223,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 113.03 243.84 0)
+			(at 110.49 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14382,7 +14232,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 243.84 0)
+			(at 110.49 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14391,7 +14241,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 243.84 0)
+			(at 110.49 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14594,7 +14444,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e18eece-c9c5-4e43-9b14-26c8ac4fb8b6")
-		(property "Reference" "C7"
+		(property "Reference" "C3"
 			(at 162.052 137.414 90)
 			(effects
 				(font
@@ -14666,7 +14516,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C7")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -14681,7 +14531,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f525ad9-dd92-4c30-848a-a2e641c67aad")
-		(property "Reference" "R65"
+		(property "Reference" "RD1"
 			(at 153.67 125.476 90)
 			(effects
 				(font
@@ -14751,7 +14601,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "R65")
+					(reference "RD1")
 					(unit 1)
 				)
 			)
@@ -14985,7 +14835,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 248.92 0)
+		(at 110.49 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14993,7 +14843,7 @@
 		(dnp no)
 		(uuid "a8c481db-a13d-4063-9e30-a0cee69cffe3")
 		(property "Reference" "#PWR017"
-			(at 113.03 255.27 0)
+			(at 110.49 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15002,7 +14852,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 252.095 0)
+			(at 110.49 252.095 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15010,7 +14860,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 248.92 0)
+			(at 110.49 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15019,7 +14869,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 248.92 0)
+			(at 110.49 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15028,7 +14878,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 248.92 0)
+			(at 110.49 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15057,7 +14907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aae30c82-9b31-4c01-91ee-f1d4493699a5")
-		(property "Reference" "R64"
+		(property "Reference" "RPB1"
 			(at 242.57 183.896 90)
 			(effects
 				(font
@@ -15127,7 +14977,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "R64")
+					(reference "RPB1")
 					(unit 1)
 				)
 			)
@@ -15342,7 +15192,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b958a781-fa0a-403a-a2f0-4101753394a2")
-		(property "Reference" "C4"
+		(property "Reference" "CB2"
 			(at 184.15 71.882 90)
 			(effects
 				(font
@@ -15412,7 +15262,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C4")
+					(reference "CB2")
 					(unit 1)
 				)
 			)
@@ -16026,7 +15876,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1b5f314-e9db-4c32-885d-a53f8058efad")
-		(property "Reference" "C8"
+		(property "Reference" "C4"
 			(at 96.52 101.092 90)
 			(effects
 				(font
@@ -16089,7 +15939,7 @@
 		(instances
 			(project ""
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C8")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -16170,7 +16020,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc4de2bb-5410-4bfe-8ad5-6c468cd5368f")
-		(property "Reference" "C2"
+		(property "Reference" "CX2"
 			(at 108.712 204.47 90)
 			(effects
 				(font
@@ -16242,7 +16092,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C2")
+					(reference "CX2")
 					(unit 1)
 				)
 			)
@@ -16833,7 +16683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f877e428-ddb4-4d18-8eb5-d5866e4750d1")
-		(property "Reference" "D63"
+		(property "Reference" "DF1"
 			(at 82.55 62.2299 90)
 			(effects
 				(font
@@ -16914,7 +16764,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "D63")
+					(reference "DF1")
 					(unit 1)
 				)
 			)
@@ -16930,7 +16780,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f8de678a-4896-4dfd-b469-03aa8e779707")
-		(property "Reference" "C1"
+		(property "Reference" "CX1"
 			(at 88.392 204.216 90)
 			(effects
 				(font
@@ -17002,7 +16852,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "C1")
+					(reference "CX1")
 					(unit 1)
 				)
 			)
@@ -17015,7 +16865,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fd84295c-e08b-4682-9619-af912ebbbe5e")
 		(property "Reference" "ST54"
 			(at 299.72 159.512 0)
@@ -17087,7 +16937,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fda2a15b-7deb-4652-85c0-5feb5c33f58c")
 		(property "Reference" "ST59_1"
 			(at 299.72 178.562 0)
@@ -17162,7 +17012,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fdfe729e-01ba-47f2-9038-991cfd09d2e3")
-		(property "Reference" "R67"
+		(property "Reference" "RHWB1"
 			(at 196.85 154.686 90)
 			(effects
 				(font
@@ -17232,7 +17082,7 @@
 		(instances
 			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7"
-					(reference "R67")
+					(reference "RHWB1")
 					(unit 1)
 				)
 			)
@@ -17262,24 +17112,13 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "viper-leD-matrix.kicad_sch"
+		(property "Sheetfile" "viper-led-matrix.kicad_sch"
 			(at 218.948 88.5194 0)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
 				(justify left top)
-			)
-		)
-		(property "Note:" "MXLockLED with DNP!"
-			(at 229.108 90.678 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-					(color 255 0 255 1)
-				)
-				(hide yes)
 			)
 		)
 		(instances

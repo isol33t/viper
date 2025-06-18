@@ -1,1 +1,36 @@
-KiCad-CustomDesignRules/JLCPCB/JLCPCB.kicad_dru
+(version 1)
+(rule "Switch courtyards overlap"
+  (severity exclusion)
+  (constraint courtyard_clearance)
+  (condition "A.Reference == 'SW*' && B.Reference == 'SW*'")
+)
+
+(rule "NPTHs overlap"
+  (severity exclusion)
+  (constraint hole_to_hole)
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && !A.isPlated() && B.Type == 'Pad' && B.Pad_Type == 'NPTH, mechanical' && !B.isPlated()")
+)
+
+# Tweak for better filtering
+#(rule "Silk Clearance for Switches"
+#  (severity exclusion)
+#  (constraint silk_clearance)
+#)
+
+(rule "More NPTHs overlap"
+  (severity exclusion)
+  (constraint physical_hole_clearance)
+  (constraint clearance (min 0mm))
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && !A.isPlated() && B.Type == 'Pad' && B.Pad_Type == 'NPTH, mechanical' && !B.isPlated()")
+)
+
+(rule "S NPTHs overlap"
+  (severity exclusion)
+  (constraint hole_clearance)
+)
+
+#(rule "edge cuts & side holes"
+#  (severity exclusion)
+#  (constraint edge_clearance)
+#  (condition "A.Reference == 'H*'")
+#)

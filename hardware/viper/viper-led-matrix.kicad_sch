@@ -4778,7 +4778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 96.52 69.85 0)
 			(effects
 				(font
@@ -4830,7 +4830,7 @@
 			(uuid "f5f665aa-f46b-4618-954b-8dca2ee6d434")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED18")
 					(unit 1)
@@ -4913,7 +4913,7 @@
 			(uuid "af3184ea-5b0a-4bc4-a1f8-37b9eecb052c")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R47")
 					(unit 1)
@@ -4996,7 +4996,7 @@
 			(uuid "5cffaa93-fcee-444a-ab68-028302f48d15")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R44")
 					(unit 1)
@@ -5038,7 +5038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 160.02 130.81 0)
 			(effects
 				(font
@@ -5090,7 +5090,7 @@
 			(uuid "8b3ad606-1a49-4182-8497-de962034c29a")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED59")
 					(unit 1)
@@ -5132,7 +5132,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 121.92 90.17 0)
 			(effects
 				(font
@@ -5184,7 +5184,7 @@
 			(uuid "ed4a61e6-7686-4bf2-91cf-d4dce6fc6bde")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED34")
 					(unit 1)
@@ -5364,7 +5364,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 121.92 110.49 0)
 			(effects
 				(font
@@ -5416,7 +5416,7 @@
 			(uuid "20bb047e-319a-4d2c-a1ce-3ee5d74c2c0b")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED46")
 					(unit 1)
@@ -5488,7 +5488,7 @@
 			(uuid "0a6c374f-065b-4f31-863e-7d60dcae331e")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "#PWR019")
 					(unit 1)
@@ -5530,7 +5530,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 223.52 90.17 0)
 			(effects
 				(font
@@ -5582,7 +5582,7 @@
 			(uuid "2ceaf068-f67f-461e-b7e6-3d694d296a63")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED42")
 					(unit 1)
@@ -5665,7 +5665,7 @@
 			(uuid "35a291c0-dce4-453e-bc61-3bd9dcfab672")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R18")
 					(unit 1)
@@ -5706,7 +5706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 134.62 49.53 0)
 			(effects
 				(font
@@ -5758,7 +5758,7 @@
 			(uuid "10539ab1-d3be-4706-818c-1bf7bd7921c2")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED6")
 					(unit 1)
@@ -5800,7 +5800,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 134.62 69.85 0)
 			(effects
 				(font
@@ -5852,7 +5852,7 @@
 			(uuid "65cd7e50-f266-45fc-9bdb-2067edaba094")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED21")
 					(unit 1)
@@ -5894,7 +5894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 71.12 69.85 0)
 			(effects
 				(font
@@ -5946,7 +5946,7 @@
 			(uuid "1844a3ed-df68-4cb6-83b4-70e803b26243")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED16")
 					(unit 1)
@@ -6029,7 +6029,7 @@
 			(uuid "99877244-1900-42e6-a7c2-64c5e8059ed8")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R59")
 					(unit 1)
@@ -6071,7 +6071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 210.82 110.49 0)
 			(effects
 				(font
@@ -6123,7 +6123,7 @@
 			(uuid "a1926bbf-bbe8-45b9-8f98-461a4345055d")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED53")
 					(unit 1)
@@ -6206,7 +6206,7 @@
 			(uuid "77d26d24-ba30-4466-9f88-97ff9916c608")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R5")
 					(unit 1)
@@ -6248,7 +6248,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 109.22 110.49 0)
 			(effects
 				(font
@@ -6300,7 +6300,7 @@
 			(uuid "19a521d2-bb9a-4974-b72c-e08db8e64dce")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED45")
 					(unit 1)
@@ -6383,7 +6383,7 @@
 			(uuid "0afa05f5-5de8-4e0c-b6b5-b8e1da57bc13")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R28")
 					(unit 1)
@@ -6425,7 +6425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 223.52 110.49 0)
 			(effects
 				(font
@@ -6477,7 +6477,7 @@
 			(uuid "f2540490-a8c8-4368-8bf1-a416181a515a")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED54")
 					(unit 1)
@@ -6560,7 +6560,7 @@
 			(uuid "d0ae6fa1-7fab-48c4-960c-2e4b4dcf3904")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R32")
 					(unit 1)
@@ -6601,7 +6601,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "locallib:MX-Lock-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-Lock-LED"
 			(at 39.37 83.82 0)
 			(effects
 				(font
@@ -6736,7 +6736,7 @@
 			(uuid "2ee97051-0fd6-4c50-979b-6f0fea207d7e")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R60")
 					(unit 1)
@@ -6819,7 +6819,7 @@
 			(uuid "31392928-a5b0-46c1-9510-b604baa935aa")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R7")
 					(unit 1)
@@ -6861,7 +6861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 236.22 69.85 0)
 			(effects
 				(font
@@ -6913,7 +6913,7 @@
 			(uuid "c3258a88-88c3-4578-bd63-7302b844c827")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED29")
 					(unit 1)
@@ -6955,7 +6955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 172.72 69.85 0)
 			(effects
 				(font
@@ -7007,7 +7007,7 @@
 			(uuid "47750520-90cb-4600-a5cc-1ff5ad0a1cfc")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED24")
 					(unit 1)
@@ -7048,7 +7048,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 210.82 49.53 0)
 			(effects
 				(font
@@ -7100,7 +7100,7 @@
 			(uuid "8877cf90-8f1c-47c7-b5ec-52bacc8a5261")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED12")
 					(unit 1)
@@ -7183,7 +7183,7 @@
 			(uuid "9c6a140e-771d-40f9-90ee-77a5e4bf9e90")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R19")
 					(unit 1)
@@ -7225,7 +7225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 198.12 69.85 0)
 			(effects
 				(font
@@ -7277,7 +7277,7 @@
 			(uuid "a556bafe-9fb3-4a1c-88fc-1864856989fe")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED26")
 					(unit 1)
@@ -7360,7 +7360,7 @@
 			(uuid "50b3cf86-4cb0-47b0-95c4-724007114e87")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R50")
 					(unit 1)
@@ -7443,7 +7443,7 @@
 			(uuid "d55782a7-5821-41b1-ba65-69fb9f9fb0e2")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R26")
 					(unit 1)
@@ -7484,7 +7484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 83.82 49.53 0)
 			(effects
 				(font
@@ -7536,7 +7536,7 @@
 			(uuid "5bd1f4d5-654c-4938-b76b-d8fb623ebe89")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED2")
 					(unit 1)
@@ -7619,7 +7619,7 @@
 			(uuid "a7313f30-924e-4729-ae7e-18907bc4d838")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R8")
 					(unit 1)
@@ -7661,7 +7661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 83.82 110.49 0)
 			(effects
 				(font
@@ -7713,7 +7713,7 @@
 			(uuid "8bf28af4-6b82-4258-a12f-7d811b888558")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED43")
 					(unit 1)
@@ -7754,7 +7754,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 30.48 93.98 0)
 			(effects
 				(font
@@ -7889,7 +7889,7 @@
 			(uuid "e5f32377-e912-4121-864d-0f33c9ab0064")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R2")
 					(unit 1)
@@ -7931,7 +7931,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 160.02 69.85 0)
 			(effects
 				(font
@@ -7983,7 +7983,7 @@
 			(uuid "37657356-5bb1-4af6-a7ec-3e24d5949ba0")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED23")
 					(unit 1)
@@ -8025,7 +8025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 96.52 90.17 0)
 			(effects
 				(font
@@ -8077,7 +8077,7 @@
 			(uuid "57af369b-84a5-4253-9dcf-9acf86f54996")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED32")
 					(unit 1)
@@ -8160,7 +8160,7 @@
 			(uuid "8a46f83e-f47e-47c3-a1fd-f04506fb9e73")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R27")
 					(unit 1)
@@ -8243,7 +8243,7 @@
 			(uuid "fec7a79a-ee2f-4bbe-b082-d10f9adb3142")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R36")
 					(unit 1)
@@ -8326,7 +8326,7 @@
 			(uuid "81e81614-1d96-46e4-b23e-a789bbddb731")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R9")
 					(unit 1)
@@ -8368,7 +8368,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 160.02 90.17 0)
 			(effects
 				(font
@@ -8420,7 +8420,7 @@
 			(uuid "3e97e872-b012-463d-8218-ec883bcd0973")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED37")
 					(unit 1)
@@ -8503,7 +8503,7 @@
 			(uuid "28cd5f71-e3ab-4c72-92d6-340e9886312d")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R12")
 					(unit 1)
@@ -8586,7 +8586,7 @@
 			(uuid "1712149f-604c-4b24-8e00-1829375fa349")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R6")
 					(unit 1)
@@ -8669,7 +8669,7 @@
 			(uuid "07af163c-adca-47a3-940d-457f90b9cd84")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R42")
 					(unit 1)
@@ -8752,7 +8752,7 @@
 			(uuid "84d2d2f7-34fc-4774-9fd4-55f6a5672d46")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R34")
 					(unit 1)
@@ -8793,7 +8793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 223.52 49.53 0)
 			(effects
 				(font
@@ -8845,7 +8845,7 @@
 			(uuid "5fec1150-7502-4622-b448-3524f7a0c785")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED13")
 					(unit 1)
@@ -8887,7 +8887,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 223.52 69.85 0)
 			(effects
 				(font
@@ -8939,7 +8939,7 @@
 			(uuid "bb07f25b-3aa6-4b55-be6c-74345f60a214")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED28")
 					(unit 1)
@@ -9022,7 +9022,7 @@
 			(uuid "f291dcf6-88c6-493e-aa0f-074f9abaab07")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R48")
 					(unit 1)
@@ -9105,7 +9105,7 @@
 			(uuid "312ccc36-28f4-4598-b7bd-f9e1e0d2730b")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R40")
 					(unit 1)
@@ -9188,7 +9188,7 @@
 			(uuid "3339c03c-b112-461b-89fb-fe57101a5e04")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R58")
 					(unit 1)
@@ -9271,7 +9271,7 @@
 			(uuid "c84345a7-b3b6-43ea-8972-1f2f5726e158")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R3")
 					(unit 1)
@@ -9354,7 +9354,7 @@
 			(uuid "81046b15-55aa-42bb-9656-802b8bbdb320")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R39")
 					(unit 1)
@@ -9396,7 +9396,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 109.22 69.85 0)
 			(effects
 				(font
@@ -9448,7 +9448,7 @@
 			(uuid "7e240f94-8023-42e3-894c-aa8a049a778f")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED19")
 					(unit 1)
@@ -9490,7 +9490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 236.22 130.81 0)
 			(effects
 				(font
@@ -9542,7 +9542,7 @@
 			(uuid "ef01c4f4-2ead-4824-8c5b-b8b46bbb97b1")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED62")
 					(unit 1)
@@ -9584,7 +9584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 198.12 90.17 0)
 			(effects
 				(font
@@ -9636,7 +9636,7 @@
 			(uuid "31d0c5bb-ee08-4c43-b7ba-df94f9a676e8")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED40")
 					(unit 1)
@@ -9678,7 +9678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 134.62 110.49 0)
 			(effects
 				(font
@@ -9730,7 +9730,7 @@
 			(uuid "001b96af-34c3-4da1-b43a-7ef1fbf787b4")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED47")
 					(unit 1)
@@ -9771,7 +9771,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 224.79 109.22 0)
 			(effects
 				(font
@@ -9906,7 +9906,7 @@
 			(uuid "e32f26df-7976-45d2-9ffd-1cf55d8ee05a")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R49")
 					(unit 1)
@@ -9989,7 +9989,7 @@
 			(uuid "4ce27bb9-9fd8-4eea-9a7f-9d5378bdccc3")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R33")
 					(unit 1)
@@ -10072,7 +10072,7 @@
 			(uuid "81a467c5-0bc7-410a-83d9-9047fa16c486")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R21")
 					(unit 1)
@@ -10113,7 +10113,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 121.92 49.53 0)
 			(effects
 				(font
@@ -10165,7 +10165,7 @@
 			(uuid "0c4d517f-3f16-4469-86b3-3cb5cb11e643")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED5")
 					(unit 1)
@@ -10207,7 +10207,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 185.42 130.81 0)
 			(effects
 				(font
@@ -10259,7 +10259,7 @@
 			(uuid "934ed24f-4c97-49ff-8137-e48e92d0e971")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED60")
 					(unit 1)
@@ -10342,7 +10342,7 @@
 			(uuid "cb57e444-4aa3-4266-95de-eafb458b3263")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R20")
 					(unit 1)
@@ -10425,7 +10425,7 @@
 			(uuid "41200e9c-6310-49ce-b443-acd054262435")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R54")
 					(unit 1)
@@ -10467,7 +10467,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 121.92 69.85 0)
 			(effects
 				(font
@@ -10519,7 +10519,7 @@
 			(uuid "cb4c438a-ca42-41a7-9b64-a68e0a2db948")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED20")
 					(unit 1)
@@ -10561,7 +10561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 172.72 90.17 0)
 			(effects
 				(font
@@ -10613,7 +10613,7 @@
 			(uuid "cdcc9779-1357-40f1-a842-acdb4adf571f")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED38")
 					(unit 1)
@@ -10696,7 +10696,7 @@
 			(uuid "a8da334c-4c45-4546-9fd6-f35c77fb16bc")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R57")
 					(unit 1)
@@ -10738,7 +10738,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 96.52 110.49 0)
 			(effects
 				(font
@@ -10790,7 +10790,7 @@
 			(uuid "fe16414e-0188-4ac7-b8fe-a4edf02247f8")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED44")
 					(unit 1)
@@ -10873,7 +10873,7 @@
 			(uuid "b4409ccf-6057-4df1-94af-758d50683ba9")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R24")
 					(unit 1)
@@ -10915,7 +10915,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 109.22 130.81 0)
 			(effects
 				(font
@@ -10967,7 +10967,7 @@
 			(uuid "3a01554e-b86c-4fbe-85a8-1dab0c3ea47c")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED57")
 					(unit 1)
@@ -11008,7 +11008,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 198.12 49.53 0)
 			(effects
 				(font
@@ -11060,7 +11060,7 @@
 			(uuid "295ad526-2545-4321-aca0-2474299139a0")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED11")
 					(unit 1)
@@ -11102,7 +11102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 210.82 130.81 0)
 			(effects
 				(font
@@ -11154,7 +11154,7 @@
 			(uuid "9fea2d43-4fc2-4779-b8c2-d243c29c4a21")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED61")
 					(unit 1)
@@ -11196,7 +11196,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 147.32 110.49 0)
 			(effects
 				(font
@@ -11248,7 +11248,7 @@
 			(uuid "7a8e41ef-6c94-4d18-9cae-3155cbda4971")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED48")
 					(unit 1)
@@ -11331,7 +11331,7 @@
 			(uuid "96f68666-1cf3-4bde-ad93-afce1ecd9a42")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R38")
 					(unit 1)
@@ -11414,7 +11414,7 @@
 			(uuid "1aaaf8e6-fc6c-4211-a510-a051ad38e940")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R41")
 					(unit 1)
@@ -11497,7 +11497,7 @@
 			(uuid "a115919a-fdb8-44b6-8e6c-b870f6650eab")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R35")
 					(unit 1)
@@ -11580,7 +11580,7 @@
 			(uuid "acd44693-e26f-4dfb-af9d-82e10cbbcc87")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R30")
 					(unit 1)
@@ -11663,7 +11663,7 @@
 			(uuid "558071be-2587-4a37-b768-06bedae86a7d")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R46")
 					(unit 1)
@@ -11704,7 +11704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 109.22 49.53 0)
 			(effects
 				(font
@@ -11756,7 +11756,7 @@
 			(uuid "72ae227f-54ad-4447-90a5-e7c745cd5ecf")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED4")
 					(unit 1)
@@ -11839,7 +11839,7 @@
 			(uuid "33b0e0e1-0701-4556-b394-5dc2611bc37a")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R51")
 					(unit 1)
@@ -11880,7 +11880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 248.92 49.53 0)
 			(effects
 				(font
@@ -11932,7 +11932,7 @@
 			(uuid "b7207872-718b-4ea9-98e9-fed9a8fc5b59")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED15")
 					(unit 1)
@@ -12015,7 +12015,7 @@
 			(uuid "ae174aa6-8fed-42d8-8da8-4edfae7d1906")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R56")
 					(unit 1)
@@ -12098,7 +12098,7 @@
 			(uuid "741fa7a8-1233-43c0-8e28-db22e48df829")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R61")
 					(unit 1)
@@ -12181,7 +12181,7 @@
 			(uuid "d5f15f3e-df26-4550-95dc-e83db30a366c")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R14")
 					(unit 1)
@@ -12223,7 +12223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 185.42 69.85 0)
 			(effects
 				(font
@@ -12275,7 +12275,7 @@
 			(uuid "cf527a16-072d-40fd-8938-dcf77a13fb69")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED25")
 					(unit 1)
@@ -12316,7 +12316,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 71.12 49.53 0)
 			(effects
 				(font
@@ -12368,7 +12368,7 @@
 			(uuid "33e95cbd-6588-4323-9610-a2ddd5b509f9")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED1")
 					(unit 1)
@@ -12451,7 +12451,7 @@
 			(uuid "1c7d2697-81c3-47de-9b1e-100f63f8dcd5")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R4")
 					(unit 1)
@@ -12493,7 +12493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 147.32 90.17 0)
 			(effects
 				(font
@@ -12545,7 +12545,7 @@
 			(uuid "99f6b5e7-5a17-43fc-9f03-9d55a16ede32")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED36")
 					(unit 1)
@@ -12587,7 +12587,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 172.72 110.49 0)
 			(effects
 				(font
@@ -12639,7 +12639,7 @@
 			(uuid "0e0e7bf3-34b0-4086-b142-3da02dd9440f")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED50")
 					(unit 1)
@@ -12722,7 +12722,7 @@
 			(uuid "0d07e64b-57e8-4b8a-992c-6dbc518d4980")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R37")
 					(unit 1)
@@ -12805,7 +12805,7 @@
 			(uuid "bf7c81b7-aea9-453a-84b5-8c528529a472")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R62")
 					(unit 1)
@@ -12847,7 +12847,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 83.82 69.85 0)
 			(effects
 				(font
@@ -12899,7 +12899,7 @@
 			(uuid "9c44f0cd-9d93-42ae-8855-5f96f6b59d54")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED17")
 					(unit 1)
@@ -12940,7 +12940,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 96.52 49.53 0)
 			(effects
 				(font
@@ -12992,7 +12992,7 @@
 			(uuid "a1c9be3e-2a90-4bfe-a8a5-c7a8f4d32359")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED3")
 					(unit 1)
@@ -13033,7 +13033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 160.02 49.53 0)
 			(effects
 				(font
@@ -13085,7 +13085,7 @@
 			(uuid "847558d8-282f-40a3-bf2f-dc7b8179b3c9")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED8")
 					(unit 1)
@@ -13127,7 +13127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 96.52 130.81 0)
 			(effects
 				(font
@@ -13179,7 +13179,7 @@
 			(uuid "fb160818-b73b-451e-9db4-6a0876228783")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED56")
 					(unit 1)
@@ -13262,7 +13262,7 @@
 			(uuid "dcb05d7d-e7c2-453d-90cf-45af55373193")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R10")
 					(unit 1)
@@ -13345,7 +13345,7 @@
 			(uuid "b190b570-bded-4ae3-a9c9-ed4dd2ef914e")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R53")
 					(unit 1)
@@ -13387,7 +13387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 160.02 110.49 0)
 			(effects
 				(font
@@ -13439,7 +13439,7 @@
 			(uuid "a29ffe53-9b25-4ea0-808c-2dd6213d702c")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED49")
 					(unit 1)
@@ -13522,7 +13522,7 @@
 			(uuid "548140ce-34e3-4e66-965f-074ecc3bc1c2")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R1")
 					(unit 1)
@@ -13563,7 +13563,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 30.48 90.17 0)
 			(effects
 				(font
@@ -13615,7 +13615,7 @@
 			(uuid "938cfb99-b133-441d-b53d-8882df698469")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED30")
 					(unit 1)
@@ -13698,7 +13698,7 @@
 			(uuid "8d9584a9-cfb5-4eca-9c2e-8b017d4791d1")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R45")
 					(unit 1)
@@ -13740,7 +13740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 185.42 90.17 0)
 			(effects
 				(font
@@ -13792,7 +13792,7 @@
 			(uuid "fc4bafa5-fa5d-456b-9fc2-1c110a690043")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED39")
 					(unit 1)
@@ -13834,7 +13834,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 83.82 90.17 0)
 			(effects
 				(font
@@ -13886,7 +13886,7 @@
 			(uuid "f65ed961-2e75-4556-a7ab-b1ddb09cbeb1")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED31")
 					(unit 1)
@@ -13969,7 +13969,7 @@
 			(uuid "d2e555a4-cea8-466a-8491-7d28ac9848ed")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R22")
 					(unit 1)
@@ -14052,7 +14052,7 @@
 			(uuid "38772f6b-7e87-421d-81e1-f90e04988351")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R31")
 					(unit 1)
@@ -14094,7 +14094,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 109.22 90.17 0)
 			(effects
 				(font
@@ -14146,7 +14146,7 @@
 			(uuid "e6b55d1e-935c-4124-92e5-91fc8a842f01")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED33")
 					(unit 1)
@@ -14188,7 +14188,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 134.62 90.17 0)
 			(effects
 				(font
@@ -14240,7 +14240,7 @@
 			(uuid "7b9a6ffc-5349-4e4c-8cd6-50c1d836491e")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED35")
 					(unit 1)
@@ -14282,7 +14282,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 210.82 69.85 0)
 			(effects
 				(font
@@ -14334,7 +14334,7 @@
 			(uuid "7d277575-e025-49d4-9d5d-2d8ded94070e")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED27")
 					(unit 1)
@@ -14417,7 +14417,7 @@
 			(uuid "0328ef95-97f1-47f7-8e2b-345ad05d5eef")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R17")
 					(unit 1)
@@ -14458,7 +14458,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 185.42 49.53 0)
 			(effects
 				(font
@@ -14510,7 +14510,7 @@
 			(uuid "f539c7a8-4648-4b84-83a9-e8ba67f6422a")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED10")
 					(unit 1)
@@ -14551,7 +14551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 237.49 48.26 0)
 			(effects
 				(font
@@ -14686,7 +14686,7 @@
 			(uuid "ca089aa6-14ee-42b3-a1ce-8913d88a836d")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R15")
 					(unit 1)
@@ -14769,7 +14769,7 @@
 			(uuid "c2c45170-e56e-4a1d-8b29-6693fa3808f7")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R16")
 					(unit 1)
@@ -14810,7 +14810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 236.22 49.53 0)
 			(effects
 				(font
@@ -14862,7 +14862,7 @@
 			(uuid "2982c74f-afdc-4e70-8da4-455b3c6ae889")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED14")
 					(unit 1)
@@ -14945,7 +14945,7 @@
 			(uuid "3f77cb8f-bd1b-4d17-bc27-d4ce66d25e00")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R11")
 					(unit 1)
@@ -15028,7 +15028,7 @@
 			(uuid "3dfb77ba-556e-4bde-b079-289994d180ed")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R52")
 					(unit 1)
@@ -15069,7 +15069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 172.72 49.53 0)
 			(effects
 				(font
@@ -15121,7 +15121,7 @@
 			(uuid "d9638344-ce71-4b66-8b64-373c09629db9")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED9")
 					(unit 1)
@@ -15204,7 +15204,7 @@
 			(uuid "c68208dd-6fd8-4b2e-8b97-309c3fce8291")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R23")
 					(unit 1)
@@ -15246,7 +15246,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 210.82 90.17 0)
 			(effects
 				(font
@@ -15298,7 +15298,7 @@
 			(uuid "f94ceca7-0a6e-4edc-9543-48a7c259133f")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED41")
 					(unit 1)
@@ -15381,7 +15381,7 @@
 			(uuid "7edde7d7-d359-41d0-91b7-9b3c7346bd5b")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R43")
 					(unit 1)
@@ -15464,7 +15464,7 @@
 			(uuid "a144db03-8b3e-4d2c-ad26-250981813ebe")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R25")
 					(unit 1)
@@ -15547,7 +15547,7 @@
 			(uuid "a084e1c7-af37-4af3-8e28-0966f74158a5")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R13")
 					(unit 1)
@@ -15630,7 +15630,7 @@
 			(uuid "4dd1534d-ecba-4b5a-9ea6-92d16d4e2d50")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R29")
 					(unit 1)
@@ -15713,7 +15713,7 @@
 			(uuid "c5d516ac-ced6-455b-a8d5-4bb9d6e30bf8")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "R55")
 					(unit 1)
@@ -15755,7 +15755,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 134.62 130.81 0)
 			(effects
 				(font
@@ -15807,7 +15807,7 @@
 			(uuid "579807e0-9851-4930-9c11-fd81af9b01b4")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED58")
 					(unit 1)
@@ -15848,7 +15848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 147.32 49.53 0)
 			(effects
 				(font
@@ -15900,7 +15900,7 @@
 			(uuid "7ca97dda-900b-47e4-b9e5-29bf368899bd")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED7")
 					(unit 1)
@@ -15942,7 +15942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 198.12 110.49 0)
 			(effects
 				(font
@@ -15994,7 +15994,7 @@
 			(uuid "5ef1388d-ba28-4243-b066-c7672cd04755")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED52")
 					(unit 1)
@@ -16036,7 +16036,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 236.22 110.49 0)
 			(effects
 				(font
@@ -16088,7 +16088,7 @@
 			(uuid "b8d20cdf-e860-4a14-8e0f-22b6321e247d")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED55")
 					(unit 1)
@@ -16130,7 +16130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 185.42 110.49 0)
 			(effects
 				(font
@@ -16182,7 +16182,7 @@
 			(uuid "e3e0cb32-c9b6-46d5-9f13-13735d1cf82d")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED51")
 					(unit 1)
@@ -16224,7 +16224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Switch_Misc:MX-LED-PolarityMarked"
+		(property "Footprint" "locallib:MX-LED"
 			(at 147.32 69.85 0)
 			(effects
 				(font
@@ -16276,7 +16276,7 @@
 			(uuid "509f7359-a5ac-48fd-878f-442e9784860a")
 		)
 		(instances
-			(project ""
+			(project "viper"
 				(path "/9e45a776-7007-48ff-b543-dc98423173b7/922499e9-9339-4a46-adbc-1b6a54df4581"
 					(reference "LED22")
 					(unit 1)
